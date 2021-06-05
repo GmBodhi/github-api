@@ -4,7 +4,9 @@
  */
 class User {
     /**
-     * @param {Object} data - raw data for the user got from api
+     * 
+     * @param {Object} data - raw data from api
+     * @param {Object} param1 
      */
     constructor(data, { client }){
         this.client = client;
@@ -101,12 +103,22 @@ class User {
         return this;
     }
 
+    /**
+     * Sets the email for the authenticated user.
+     * @param {String} email - Email you want to set
+     * @returns - Returns updated user
+     */
     async setEmail(email){
         return this.client.api.user.patch({ body: { email } }).then(r => {
             return this._patch(r);
         })
     }
 
+    /**
+     * Sets the name for the authenticated user.
+     * @param {String} name - name that you want to set
+     * @returns - Returns updated user.
+     */
     async setName(name){
         return this.client.api.user.patch({ body: { name }}).then(r => {
             return this._patch(r);
