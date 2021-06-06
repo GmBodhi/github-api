@@ -1,5 +1,6 @@
+// @ts-check
 const Manager = require("./manager");
-const User = require("./user");
+const User = require("../structures/user");
 
 class UserManager extends Manager {
   constructor() {

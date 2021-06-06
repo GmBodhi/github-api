@@ -16,3 +16,5 @@ class BaseManager {
     return this.cache.get(id) ?? null;
   }
 }
+
+module.exports = BaseManager;
