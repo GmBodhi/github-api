@@ -1,5 +1,5 @@
 {
-  "name": "github.js",
+  "name": "github-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,5 +12,8 @@
   "dependencies": {
     "@discordjs/collection": "^0.1.6",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jsdoc-json": "^2.0.2"
   }
 }
