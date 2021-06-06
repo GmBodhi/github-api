@@ -1,8 +1,9 @@
 //@ts-check
-const rest = require("./utils/rest");
-const User = require("./structures/user");
+"use strict";
+const rest = require("../utils/rest");
+const User = require("./user");
 const Event = require("events");
-const UserManager = require("./managers/usermanager");
+const UserManager = require("../managers/usermanager");
 
 class Client extends Event {
   constructor(options = {}) {

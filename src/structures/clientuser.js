@@ -107,3 +107,6 @@ class ClientUser extends User {
       });
   }
 }
+
+
+module.exports = ClientUser;
