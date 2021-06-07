@@ -8,7 +8,7 @@ const UserManager = require("../managers/usermanager");
 class Client extends Event {
   constructor(options = {}) {
     super();
-    this.token = options.token ?? null;
+    this.token = options.token ?? null
     this.ready = false;
     this.user = null;
     this.users = new UserManager();
