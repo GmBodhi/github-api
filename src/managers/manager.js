@@ -1,9 +1,11 @@
 //@ts-check
+"use strict";
 const { Collection } = require("@discordjs/collection");
 
 class BaseManager {
-  constructor(data, { client }) {
+  constructor({ client, url }) {
     this.client = client;
+    this.url = url;
     this.cache = new Collection();
   }
 

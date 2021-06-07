@@ -1,3 +1,5 @@
+//@ts-check
+"use strict";
 const User = require("./user");
 
 class ClientUser extends User {

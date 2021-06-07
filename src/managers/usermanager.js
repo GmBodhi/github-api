@@ -1,10 +1,11 @@
 // @ts-check
+"use strict";
 const Manager = require("./manager");
 const User = require("../structures/user");
 
 class UserManager extends Manager {
-  constructor() {
-    super();
+  constructor({ client, url }) {
+    super({ client, url });
   }
 
   async fetch(id, { cache = true, force = false }) {
