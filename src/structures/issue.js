@@ -1,1 +1,2 @@
-
+//@ts-check
+"use strict";

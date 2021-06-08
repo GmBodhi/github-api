@@ -1,6 +1,7 @@
 //@ts-check
 "use strict";
 const User = require("./user");
+const Blocks = require('../structures/blocks')
 
 class ClientUser extends User {
   constructor(data) {
@@ -12,6 +13,7 @@ class ClientUser extends User {
     this.diskUsage = data.disk_usage;
     this.collaborators = data.collaborators;
     this.twoFactorAuthentication = data.two_factor_authentication;
+    this.blocks = new Blocks();
     this.plan = {
       name: data.plan.name,
       space: data.plan.space,
