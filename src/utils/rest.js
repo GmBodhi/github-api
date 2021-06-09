@@ -57,7 +57,7 @@ function buildRoute(manager) {
 async function makeReq(
   method,
   path,
-  { body = {}, headers = {}, query, _null },
+  { body = {}, headers = {}, query, _ },
   token
 ) {
   Object.defineProperties(headers, {
@@ -74,8 +74,8 @@ async function makeReq(
     encodeURI(`http://api.github.com${path.trim()}${query ? "?" + query : ""}`),
     { method: method, body: body, headers: headers }
   ).then((res) => {
-    if (!res.ok && !_null) throw new Error(res.statusText);
-    return res.json();
+    if (!res.ok && !_) throw new Error(res.statusText);
+    return res.json(), res;
   });
 }
 

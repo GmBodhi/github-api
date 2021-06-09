@@ -1,19 +1,20 @@
 //@ts-check
 "use strict";
 const User = require("./user");
-const Blocks = require('../structures/blocks')
+const Blocks = require('../structures/blocks');
+const Emails = require('./emails');
 
 class ClientUser extends User {
-  constructor(data) {
-    super(data);
-
+  constructor(data, { client }) {
+    super(data, { client });
     this.privateGists = data.private_gists;
     this.totalPrivateRepos = data.total_private_repos;
     this.ownedPrivateRepos = data.owned_private_repos;
     this.diskUsage = data.disk_usage;
     this.collaborators = data.collaborators;
     this.twoFactorAuthentication = data.two_factor_authentication;
-    this.blocks = new Blocks();
+    this.blocks = new Blocks(client);
+    this.emails = new Emails(client);
     this.plan = {
       name: data.plan.name,
       space: data.plan.space,
