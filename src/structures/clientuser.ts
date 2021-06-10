@@ -1,11 +1,21 @@
 import User from "./user";
 import Blocks  from "../structures/blocks";
 import Emails from "./emails";
+import Client from './client';
 
 class ClientUser extends User {
-  constructor(data, { client }) {
+  privateGists: string;
+  totalPrivateRepos: number;
+  ownedPrivateRepos: number;
+  diskUsage: number;
+  collaborators: number;
+  twoFactorAuthentication: boolean;
+  blocks: Blocks;
+  emails: Emails;
+  plan?: any
+  constructor(data: any, { client }: { client: Client }) {
     super(data, { client });
-    let { plan = {} } = data;
+    let { plan = {} }: any = data;
     this.privateGists = data.private_gists;
     this.totalPrivateRepos = data.total_private_repos;
     this.ownedPrivateRepos = data.owned_private_repos;

@@ -1,6 +1,7 @@
 import rest from "../utils/rest";
 import Events from "events";
 import UserManager from "../managers/usermanager";
+import User from './user';
 
 interface ClientOptions {
   token?: string | null,
@@ -10,6 +11,9 @@ interface ClientOptions {
 class Client extends Events {
   token?: string|null;
   cache?: boolean|null;
+  ready: boolean|null;
+  user: User | null;
+  users: UserManager;
   constructor(options: ClientOptions = {}) {
     super();
     this.token = options.token ?? null;
