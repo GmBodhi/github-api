@@ -1,4 +1,3 @@
-"use strict";
 /**
  * GitHub user object.
  */
@@ -81,4 +80,4 @@ class User {
   }
 }
 
-module.exports = User;
+export default User;

@@ -1,8 +1,6 @@
-//@ts-check
-"use strict";
-const User = require("./user");
-const Blocks = require("../structures/blocks");
-const Emails = require("./emails");
+import User from "./user";
+import Blocks  from "../structures/blocks";
+import Emails from "./emails";
 
 class ClientUser extends User {
   constructor(data, { client }) {
@@ -115,4 +113,4 @@ class ClientUser extends User {
   }
 }
 
-module.exports = ClientUser;
+export default ClientUser;

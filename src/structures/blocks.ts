@@ -1,7 +1,3 @@
-//@ts-check
-"use strict";
-const User = require("./user");
-
 class Blocks {
   client: Client;
   constructor(client: Client) {
@@ -35,4 +31,4 @@ class Blocks {
   }
 }
 
-module.exports = Blocks;
+export default Blocks;

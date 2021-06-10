@@ -1,4 +1,3 @@
-"use strict";
 const fetch = require("node-fetch");
 
 const noop = () => {}; // eslint-disable-line no-empty-function
@@ -69,4 +68,4 @@ async function makeReq(method, path, { body, headers = {}, query, _ }, token) {
   });
 }
 
-module.exports = buildRoute;
+export default buildRoute;

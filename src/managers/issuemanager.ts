@@ -1,7 +1,5 @@
-// @ts-check
-"use strict";
 
-const Manager = require("./manager");
+import Manager from "./manager";
 
 class IssueManager extends Manager {
   constructor({ client, url }) {

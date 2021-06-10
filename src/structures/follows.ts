@@ -1,6 +1,3 @@
-//@ts-check
-"use strict";
-
 class Follows {
   constructor(client) {
     this.client = client;

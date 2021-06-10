@@ -1,6 +1,4 @@
-//@ts-check
-"use strict";
-const Manager = require("./manager");
+import Manager from "./manager";
 
 class RepoManager extends Manager {
   constructor({ client, url }) {

@@ -1,5 +1,3 @@
-//@ts-check
-"use strict";
 
 class Repo {
   constructor(data) {
@@ -7,4 +5,4 @@ class Repo {
   }
 }
 
-module.exports = Repo;
+export default Repo;

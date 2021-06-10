@@ -1,6 +1,3 @@
-//@ts-check
-"use strict";
-
 class Emails {
   constructor(client) {
     this.client = client;
@@ -39,4 +36,4 @@ class Emails {
   }
 }
 
-module.exports = Emails;
+export default Emails;

@@ -1,6 +1,6 @@
-const rest = require("../utils/rest");
-const Events = require("events");
-const UserManager = require("../managers/usermanager");
+import rest from "../utils/rest";
+import Events from "events";
+import UserManager from "../managers/usermanager";
 
 interface ClientOptions {
   token?: string | null,
@@ -39,4 +39,4 @@ class Client extends Events {
   }
 }
 
-module.exports = Client;
+export default Client;

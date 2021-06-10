@@ -1,7 +1,5 @@
-// @ts-check
-"use strict";
-const Manager = require("./manager");
-const User = require("../structures/user");
+import Manager from "./manager";
+import User from "../structures/user";
 
 class UserManager extends Manager {
   constructor({ client, url }) {
@@ -48,4 +46,4 @@ class UserManager extends Manager {
   }
 }
 
-module.exports = UserManager;
+export default UserManager;
