@@ -1,9 +1,12 @@
+import Client from "./client";
+
 class Follows {
-  constructor(client) {
+  client: Client;
+  constructor(client: Client) {
     this.client = client;
   }
 
-  async list(username, options) {
+  async list(username: string, options: any) {
     let { page, perPage } = options;
     this.client.api.users(username).followers.get({
       query: `${page ? "page=" + page + "&" : ""}${
@@ -12,3 +15,5 @@ class Follows {
     });
   }
 }
+
+export default Follows;

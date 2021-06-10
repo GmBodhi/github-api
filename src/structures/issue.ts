@@ -1,6 +1,10 @@
+import Client from "./client";
 
 class Issue {
-  constructor(data, client) {
+  client: Client;
+  constructor(data: any, client: Client) {
     this.client = client;
   }
 }
+
+export default Issue;

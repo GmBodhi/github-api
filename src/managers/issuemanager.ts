@@ -1,4 +1,3 @@
-
 import Manager from "./manager";
 
 class IssueManager extends Manager {

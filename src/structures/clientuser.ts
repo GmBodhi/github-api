@@ -1,7 +1,7 @@
 import User from "./user";
-import Blocks  from "../structures/blocks";
+import Blocks from "../structures/blocks";
 import Emails from "./emails";
-import Client from './client';
+import Client from "./client";
 
 class ClientUser extends User {
   privateGists: string;
@@ -12,7 +12,12 @@ class ClientUser extends User {
   twoFactorAuthentication: boolean;
   blocks: Blocks;
   emails: Emails;
-  plan?: any
+  plan?: {
+    name: string;
+    space: number;
+    privateRepos: number;
+    collaborators: number;
+  };
   constructor(data: any, { client }: { client: Client }) {
     super(data, { client });
     let { plan = {} }: any = data;
@@ -37,8 +42,8 @@ class ClientUser extends User {
    * @param {String} email - Email you want to set
    * @returns - Returns updated user
    */
-  async setEmail(email) {
-    return this.client.api.user.patch({ body: { email } }).then(({ r }) => {
+  async setEmail(email: string) {
+    return this.client.api.user.patch({ body: { email } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
@@ -48,52 +53,52 @@ class ClientUser extends User {
    * @param {String} name - name that you want to set
    * @returns - Returns updated user.
    */
-  async setName(name) {
-    return this.client.api.user.patch({ body: { name } }).then(({ r, res }) => {
+  async setName(name: string) {
+    return this.client.api.user.patch({ body: { name } }).then(({ r, res }: any) => {
       console.log(r, res);
       return this._patch(r);
     });
   }
 
-  async setBlog(blog) {
-    return this.client.api.user.patch({ body: { blog } }).then(({ r }) => {
+  async setBlog(blog: string) {
+    return this.client.api.user.patch({ body: { blog } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
 
-  async setTwitterUsername(twitter_username) {
+  async setTwitterUsername(twitter_username: string|null) {
     return this.client.api.user
       .patch({ body: { twitter_username } })
-      .then(({ r }) => {
+      .then(({ r }: any) => {
         return this._patch(r);
       });
   }
 
-  async setCompany(company) {
-    return this.client.api.user.patch({ body: { company } }).then(({ r }) => {
+  async setCompany(company: string) {
+    return this.client.api.user.patch({ body: { company } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
 
-  async setLocation(location) {
-    return this.client.api.user.patch({ body: { location } }).then(({ r }) => {
+  async setLocation(location: string) {
+    return this.client.api.user.patch({ body: { location } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
 
-  async setHireable(hireable) {
-    return this.client.api.user.patch({ body: { hireable } }).then(({ r }) => {
+  async setHireable(hireable: boolean) {
+    return this.client.api.user.patch({ body: { hireable } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
 
-  async setBio(bio) {
-    return this.client.api.user.patch({ body: { bio } }).then(({ r }) => {
+  async setBio(bio: string) {
+    return this.client.api.user.patch({ body: { bio } }).then(({ r }: any) => {
       return this._patch(r);
     });
   }
 
-  async setAll(options) {
+  async setAll(options: any) {
     let {
       email,
       name,
@@ -117,7 +122,7 @@ class ClientUser extends User {
           bio,
         },
       })
-      .then(({ r }) => {
+      .then(({ r }: any) => {
         return this._patch(r);
       });
   }

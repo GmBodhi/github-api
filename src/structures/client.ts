@@ -1,23 +1,23 @@
 import rest from "../utils/rest";
 import Events from "events";
 import UserManager from "../managers/usermanager";
-import User from './user';
+import User from "./user";
 
 interface ClientOptions {
-  token?: string | null,
-  cache?: boolean
+  token?: string | null;
+  cache?: boolean;
 }
 
 class Client extends Events {
-  token?: string|null;
-  cache?: boolean|null;
-  ready: boolean|null;
+  token?: string | null;
+  cache?: boolean | null;
+  ready: boolean | null;
   user: User | null;
   users: UserManager;
   constructor(options: ClientOptions = {}) {
     super();
     this.token = options.token ?? null;
-    this.cache =  options.cache ?? true;
+    this.cache = options.cache ?? true;
     this.ready = false;
     this.user = null;
     this.users = new UserManager({ client: this, url: null });

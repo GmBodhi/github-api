@@ -1,3 +1,5 @@
+import Client from "./client";
+
 /**
  * GitHub user object.
  */
@@ -7,7 +9,39 @@ class User {
    * @param {Object} data - raw data from api
    * @param {Object} param1
    */
-  constructor(data, { client }) {
+  client: Client;
+  login: string;
+  id: number;
+  nodeId: string;
+  avatarUrl: string;
+  gravatarId: string;
+  url: string
+  htmlUrl: string;
+  followingUrl: string;
+  followersUrl: string;
+  gistsUrl: string;
+  starredUrl: string;
+  subscriptionsUrl: string;
+  organizationsUrl: string
+  reposUrl: string;
+  eventsUrl: string;
+  receivedEventsUrl: string;
+  type: string;
+  siteAdmin: boolean;
+  company: string;
+  blog: string;
+  location: string;
+  email: string;
+  hireable: boolean;
+  bio: string;
+  twitterUsername: string;
+  publicRepos: number;
+  publicGists: number;
+  followers: number;
+  following: number;
+  createdAt: string;
+  updatedAt: string;
+  constructor(data: any = {}, { client }: any) {
     this.client = client;
     this.login = data.login;
     this.id = data.id;
@@ -42,7 +76,7 @@ class User {
     this.updatedAt = data.updated_at;
   }
 
-  _patch(data) {
+  _patch(data: any) {
     this.login = data.login;
     this.avatarUrl = data.avatar_url;
     this.gravatarId = data.gravatar_id;
@@ -70,12 +104,6 @@ class User {
     this.followers = data.followers;
     this.following = data.following;
     this.updatedAt = data.updated_at;
-    this.privateGists = data.private_gists;
-    this.totalPrivateRepos = data.total_private_repos;
-    this.ownedPrivateRepos = data.owned_private_repos;
-    this.diskUsage = data.disk_usage;
-    this.collaborators = data.collaborators;
-    this.twoFactorAuthentication = data.two_factor_authentication;
     return this;
   }
 }

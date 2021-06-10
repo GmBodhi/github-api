@@ -1,5 +1,5 @@
-import Client from './client';
-import User from './user';
+import Client from "./client";
+import User from "./user";
 
 class Blocks {
   client: Client;
