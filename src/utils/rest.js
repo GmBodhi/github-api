@@ -40,7 +40,8 @@ function buildRoute(manager) {
                 route: routeBucket.join("/"),
               },
               options
-            ), manager
+            ),
+            manager
           );
       }
       route.push(name);
@@ -54,20 +55,15 @@ function buildRoute(manager) {
   return new Proxy(noop, handler);
 }
 
-async function makeReq(
-  method,
-  path,
-  { body, headers = {}, query, _ },
-  token
-) {
-  headers["accept"] = "application/vnd.github.v3+json"
+async function makeReq(method, path, { body, headers = {}, query, _ }, token) {
+  headers["accept"] = "application/vnd.github.v3+json";
   headers["Authorization"] = `token ${token}`;
-  console.log(path, method, body)
+  console.log(path, method, body);
   return await fetch(
     encodeURI(`http://api.github.com${path.trim()}${query ? "?" + query : ""}`),
     { method: method, body, headers: headers }
   ).then(async (res) => {
-    console.log(res)
+    console.log(res);
     if (!res.ok && !_) throw new Error(res.statusText);
     return { r: await res.json(), res };
   });

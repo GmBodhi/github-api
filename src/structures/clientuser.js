@@ -1,8 +1,8 @@
 //@ts-check
 "use strict";
 const User = require("./user");
-const Blocks = require('../structures/blocks');
-const Emails = require('./emails');
+const Blocks = require("../structures/blocks");
+const Emails = require("./emails");
 
 class ClientUser extends User {
   constructor(data, { client }) {
@@ -30,7 +30,7 @@ class ClientUser extends User {
    * @returns - Returns updated user
    */
   async setEmail(email) {
-    return this.client.api.user.patch({ body: { email } }).then((r) => {
+    return this.client.api.user.patch({ body: { email } }).then(({ r }) => {
       return this._patch(r);
     });
   }
@@ -41,14 +41,14 @@ class ClientUser extends User {
    * @returns - Returns updated user.
    */
   async setName(name) {
-    return this.client.api.user.patch({ body: { name } }).then(({r, res}) => {
-      console.log(r, res)
+    return this.client.api.user.patch({ body: { name } }).then(({ r, res }) => {
+      console.log(r, res);
       return this._patch(r);
     });
   }
 
   async setBlog(blog) {
-    return this.client.api.user.patch({ body: { blog } }).then((r) => {
+    return this.client.api.user.patch({ body: { blog } }).then(({ r }) => {
       return this._patch(r);
     });
   }
@@ -56,31 +56,31 @@ class ClientUser extends User {
   async setTwitterUsername(twitter_username) {
     return this.client.api.user
       .patch({ body: { twitter_username } })
-      .then((r) => {
+      .then(({ r }) => {
         return this._patch(r);
       });
   }
 
   async setCompany(company) {
-    return this.client.api.user.patch({ body: { company } }).then((r) => {
+    return this.client.api.user.patch({ body: { company } }).then(({ r }) => {
       return this._patch(r);
     });
   }
 
   async setLocation(location) {
-    return this.client.api.user.patch({ body: { location } }).then((r) => {
+    return this.client.api.user.patch({ body: { location } }).then(({ r }) => {
       return this._patch(r);
     });
   }
 
   async setHireable(hireable) {
-    return this.client.api.user.patch({ body: { hireable } }).then((r) => {
+    return this.client.api.user.patch({ body: { hireable } }).then(({ r }) => {
       return this._patch(r);
     });
   }
 
   async setBio(bio) {
-    return this.client.api.user.patch({ body: { bio } }).then((r) => {
+    return this.client.api.user.patch({ body: { bio } }).then(({ r }) => {
       return this._patch(r);
     });
   }
@@ -109,11 +109,10 @@ class ClientUser extends User {
           bio,
         },
       })
-      .then((r) => {
+      .then(({ r }) => {
         return this._patch(r);
       });
   }
 }
-
 
 module.exports = ClientUser;
