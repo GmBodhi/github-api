@@ -1,6 +1,6 @@
 //@ts-check
 "use strict";
-const { Collection } = require("@discordjs/collection");
+const Collection = require("@discordjs/collection");
 
 class BaseManager {
   constructor({ client, url }) {
