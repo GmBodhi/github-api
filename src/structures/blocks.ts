@@ -3,7 +3,8 @@
 const User = require("./user");
 
 class Blocks {
-  constructor(client) {
+  client: Client;
+  constructor(client: Client) {
     this.client = client;
   }
 
