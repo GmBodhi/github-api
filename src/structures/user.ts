@@ -15,14 +15,14 @@ class User {
   nodeId: string;
   avatarUrl: string;
   gravatarId: string;
-  url: string
+  url: string;
   htmlUrl: string;
   followingUrl: string;
   followersUrl: string;
   gistsUrl: string;
   starredUrl: string;
   subscriptionsUrl: string;
-  organizationsUrl: string
+  organizationsUrl: string;
   reposUrl: string;
   eventsUrl: string;
   receivedEventsUrl: string;

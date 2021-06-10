@@ -43,9 +43,11 @@ class ClientUser extends User {
    * @returns - Returns updated user
    */
   async setEmail(email: string) {
-    return this.client.api.user.patch({ body: { email } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return this.client.api.user
+      .patch({ body: { email } })
+      .then(({ r }: any) => {
+        return this._patch(r);
+      });
   }
 
   /**
@@ -54,10 +56,12 @@ class ClientUser extends User {
    * @returns - Returns updated user.
    */
   async setName(name: string) {
-    return this.client.api.user.patch({ body: { name } }).then(({ r, res }: any) => {
-      console.log(r, res);
-      return this._patch(r);
-    });
+    return this.client.api.user
+      .patch({ body: { name } })
+      .then(({ r, res }: any) => {
+        console.log(r, res);
+        return this._patch(r);
+      });
   }
 
   async setBlog(blog: string) {
@@ -66,7 +70,7 @@ class ClientUser extends User {
     });
   }
 
-  async setTwitterUsername(twitter_username: string|null) {
+  async setTwitterUsername(twitter_username: string | null) {
     return this.client.api.user
       .patch({ body: { twitter_username } })
       .then(({ r }: any) => {
@@ -75,21 +79,27 @@ class ClientUser extends User {
   }
 
   async setCompany(company: string) {
-    return this.client.api.user.patch({ body: { company } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return this.client.api.user
+      .patch({ body: { company } })
+      .then(({ r }: any) => {
+        return this._patch(r);
+      });
   }
 
   async setLocation(location: string) {
-    return this.client.api.user.patch({ body: { location } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return this.client.api.user
+      .patch({ body: { location } })
+      .then(({ r }: any) => {
+        return this._patch(r);
+      });
   }
 
   async setHireable(hireable: boolean) {
-    return this.client.api.user.patch({ body: { hireable } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return this.client.api.user
+      .patch({ body: { hireable } })
+      .then(({ r }: any) => {
+        return this._patch(r);
+      });
   }
 
   async setBio(bio: string) {
