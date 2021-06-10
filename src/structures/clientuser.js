@@ -7,6 +7,7 @@ const Emails = require('./emails');
 class ClientUser extends User {
   constructor(data, { client }) {
     super(data, { client });
+    let { plan = {} } = data;
     this.privateGists = data.private_gists;
     this.totalPrivateRepos = data.total_private_repos;
     this.ownedPrivateRepos = data.owned_private_repos;
@@ -16,10 +17,10 @@ class ClientUser extends User {
     this.blocks = new Blocks(client);
     this.emails = new Emails(client);
     this.plan = {
-      name: data.plan.name,
-      space: data.plan.space,
-      privateRepos: data.plan.private_repos,
-      collaborators: data.plan.collaborators,
+      name: plan.name,
+      space: plan.space,
+      privateRepos: plan.private_repos,
+      collaborators: plan.collaborators,
     };
   }
 
@@ -40,7 +41,8 @@ class ClientUser extends User {
    * @returns - Returns updated user.
    */
   async setName(name) {
-    return this.client.api.user.patch({ body: { name } }).then((r) => {
+    return this.client.api.user.patch({ body: { name } }).then(({r, res}) => {
+      console.log(r, res)
       return this._patch(r);
     });
   }
