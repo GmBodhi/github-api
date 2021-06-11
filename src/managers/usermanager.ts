@@ -1,30 +1,32 @@
 import Manager from "./manager";
 import User from "../structures/user";
+import Client from "../structures/client";
+import { FetchOptions } from '../utils/constants'
 
 class UserManager extends Manager {
-  constructor({ client, url }) {
+  constructor({ client, url }: { client: Client, url: string }) {
     super({ client, url });
   }
 
-  async fetch(id, { cache = true, force = false } = {}) {
+  async fetch(id: string, { cache = true, force = false }: FetchOptions = {}) {
     let o = this.cache.get(id);
     if (o && !force) return o;
     return this.client.api
       .users(id)
       .get()
-      .then(({ r }) => {
+      .then(({ r }: any) => {
         if (cache) return this.add(r.login, r);
         return new User(r, { client: this.client });
       });
   }
 
-  add(id, data) {
+  add(id: string, data: any) {
     let o = new User(data, { client: this.client });
     this.cache.set(id, o);
     return o;
   }
 
-  async get(query = {}, cache = true) {
+  async get(query: any = {}, cache: boolean = true) {
     let { since, perPage } = query;
 
     this.client.api.users
@@ -34,7 +36,7 @@ class UserManager extends Manager {
         }`,
       })
       .then(({ r = [] }) => {
-        let users = [];
+        let users: User[] = [];
         r.forEach((user) => {
           user = cache
             ? this.add(user.login, user)
