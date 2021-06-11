@@ -1,20 +1,18 @@
-// @ts-check
-"use strict";
-const Manager = require("./manager");
-const User = require("../structures/user");
+import Manager from "./manager";
+import User from "../structures/user";
 
 class UserManager extends Manager {
   constructor({ client, url }) {
     super({ client, url });
   }
 
-  async fetch(id, { cache = true, force = false }) {
+  async fetch(id, { cache = true, force = false } = {}) {
     let o = this.cache.get(id);
     if (o && !force) return o;
     return this.client.api
       .users(id)
       .get()
-      .then((r) => {
+      .then(({ r }) => {
         if (cache) return this.add(r.login, r);
         return new User(r, { client: this.client });
       });
@@ -35,7 +33,7 @@ class UserManager extends Manager {
           perPage ? "per_page=" + perPage : ""
         }`,
       })
-      .then((r = []) => {
+      .then(({ r = [] }) => {
         let users = [];
         r.forEach((user) => {
           user = cache
@@ -48,4 +46,4 @@ class UserManager extends Manager {
   }
 }
 
-module.exports = UserManager;
+export default UserManager;

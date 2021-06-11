@@ -1,6 +1,4 @@
-//@ts-check
-"use strict";
-const { Collection } = require("@discordjs/collection");
+import Collection from "@discordjs/collection";
 
 class BaseManager {
   constructor({ client, url }) {
@@ -19,4 +17,4 @@ class BaseManager {
   }
 }
 
-module.exports = BaseManager;
+export default BaseManager;

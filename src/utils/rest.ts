@@ -1,4 +1,3 @@
-"use strict";
 const fetch = require("node-fetch");
 
 const noop = () => {}; // eslint-disable-line no-empty-function
@@ -40,7 +39,8 @@ function buildRoute(manager) {
                 route: routeBucket.join("/"),
               },
               options
-            )
+            ),
+            manager
           );
       }
       route.push(name);
@@ -54,29 +54,18 @@ function buildRoute(manager) {
   return new Proxy(noop, handler);
 }
 
-async function makeReq(
-  method,
-  path,
-  { body = {}, headers = {}, query, _ },
-  token
-) {
-  Object.defineProperties(headers, {
-    Authorization: {
-      value: token,
-      writable: false,
-    },
-    accept: {
-      value: "application/vnd.github.v3+json",
-      writable: false,
-    },
-  });
+async function makeReq(method, path, { body, headers = {}, query, _ }, token) {
+  headers["accept"] = "application/vnd.github.v3+json";
+  headers["Authorization"] = `token ${token}`;
+  console.log(path, method, body);
   return await fetch(
     encodeURI(`http://api.github.com${path.trim()}${query ? "?" + query : ""}`),
-    { method: method, body: body, headers: headers }
-  ).then((res) => {
+    { method: method, body, headers: headers }
+  ).then(async (res) => {
+    console.log(res);
     if (!res.ok && !_) throw new Error(res.statusText);
-    return res.json(), res;
+    return { r: await res.json(), res };
   });
 }
 
-module.exports = buildRoute;
+export default buildRoute;
