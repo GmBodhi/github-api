@@ -1,31 +1,37 @@
-import rest from "../utils/rest";
 import Events from "events";
 import UserManager from "../managers/usermanager";
-import User from "./user";
+import { Response } from "node-fetch";
+import ClientUser from "./clientuser";
+import { RestManager } from "../utils";
+import GHError from "../utils/error";
 
 interface ClientOptions {
   token?: string | null;
   cache?: boolean;
 }
 
-class Client extends Events {
-  token?: string | null;
-  cache?: boolean | null;
-  ready: boolean | null;
-  user: User | null;
-  users: UserManager;
+class Client extends Events.EventEmitter {
+  public readonly token?: string | null;
+  public readonly cache?: boolean | null;
+  public ready: boolean;
+  public user: ClientUser | null;
+  public readonly users: UserManager;
+  public readonly api: RestManager;
   constructor(options: ClientOptions = {}) {
     super();
     this.token = options.token ?? null;
     this.cache = options.cache ?? true;
-    this.ready = false;
     this.user = null;
+    this.api = new RestManager(this);
+    this.ready = false;
     this.users = new UserManager({ client: this, url: null });
     if (this.token)
-      this.api.user
-        .post({})
-        .then((r: Object) => {
-          this.user = new User(r, { client: this });
+      this.api
+        .req("user")
+        .post()
+        .then(async (r: Response) => {
+          if (!r.ok) throw new GHError(r, await r.json());
+          this.user = new ClientUser(await r.json(), { client: this });
           this.ready = true;
           this.emit("ready");
         })
@@ -36,10 +42,6 @@ class Client extends Events {
       this.ready = true;
       this.emit("ready");
     }
-  }
-
-  get api() {
-    return rest(this.token);
   }
 }
 
