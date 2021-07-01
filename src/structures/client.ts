@@ -3,7 +3,6 @@ import UserManager from "../managers/usermanager";
 import { Response } from "node-fetch";
 import ClientUser from "./clientuser";
 import { RestManager } from "../utils";
-import GHError from "../utils/error";
 
 interface ClientOptions {
   token?: string | null;
@@ -30,7 +29,6 @@ class Client extends Events.EventEmitter {
         .req("user")
         .post()
         .then(async (r: Response) => {
-          if (!r.ok) throw new GHError(r, await r.json());
           this.user = new ClientUser(await r.json(), { client: this });
           this.ready = true;
           this.emit("ready");

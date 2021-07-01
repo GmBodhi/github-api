@@ -1,10 +1,10 @@
 import Manager from "./manager";
 import User from "../structures/user";
 import Client from "../structures/client";
-import { FetchOptions } from '../utils/constants'
+import { FetchOptions } from "../utils/constants";
 
 class UserManager extends Manager {
-  constructor({ client, url }: { client: Client, url: string }) {
+  constructor({ client, url }: { client: Client; url: string | null }) {
     super({ client, url });
   }
 

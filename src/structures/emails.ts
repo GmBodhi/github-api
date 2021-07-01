@@ -1,41 +1,60 @@
+import { Response } from "node-fetch";
+import Base from "./base";
 import Client from "./client";
 
-class Emails {
-  client: Client;
+class Emails extends Base {
   constructor(client: Client) {
-    this.client = client;
+    super(client);
   }
 
   async setPrimaryVisibility(visibility: any, email?: string) {
-    return await this.client.api.user.email.visibility.patch({
-      body: { email, visibility },
-    });
+    return await this.client.api
+      .req("user/email/visibility", { body: { visibility, email } })
+      .patch()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 
-  async list(options = {}) {
-    let { page, perPage }: any = options;
-    return this.client.api.user.emails.get({
-      query: `${page ? "page=" + page + "&" : ""}${
-        perPage ? "per_page=" + perPage : ""
-      }`,
-    });
+  async list(options: { page?: number; perPage?: number } = {}) {
+    return await this.client.api
+      .req("user/emails", { query: options })
+      .get()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 
   async add(...emails: string[]) {
-    return await this.client.api.user.emails.post({ body: { emails } });
+    return await this.client.api
+      .req("user/emails", { body: { emails } })
+      .post()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 
   async remove(...emails: string[]) {
-    return await this.client.api.user.emails.delete({ body: { emails } });
+    return await this.client.api
+      .req("user/emails", { body: { emails } })
+      .delete()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 
   async listPublic(options = {}) {
-    let { page, perPage }: any = options;
-    return this.client.api.user.public_emails.get({
-      query: `${page ? "page=" + page + "&" : ""}${
-        perPage ? "per_page=" + perPage : ""
-      }`,
-    });
+    return await this.client.api
+      .req("user/public_emails", { query: options })
+      .get()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 }
 

@@ -1,5 +1,4 @@
 export interface FetchOptions {
-    cache?: boolean;
-    force?: boolean;
+  cache?: boolean;
+  force?: boolean;
 }
-

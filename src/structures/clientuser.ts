@@ -3,7 +3,6 @@ import Blocks from "../structures/blocks";
 import Emails from "./emails";
 import Client from "./client";
 import { Response } from "node-fetch";
-import GHError from "../utils/error";
 
 class ClientUser extends User {
   privateGists: string;
@@ -100,8 +99,7 @@ class ClientUser extends User {
       .req("user", { body: options })
       .patch()
       .then(async (r: Response) => {
-        if (!r.ok) throw new GHError(r, await r.json());
-        return this._patch(r);
+        return this._patch(await r.json());
       });
   }
 }
