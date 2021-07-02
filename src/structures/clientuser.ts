@@ -3,6 +3,7 @@ import Blocks from "../structures/blocks";
 import Emails from "./emails";
 import Client from "./client";
 import { Response } from "node-fetch";
+import { ClientUserData } from "../utils/rawdata";
 
 class ClientUser extends User {
   privateGists: string;
@@ -13,15 +14,15 @@ class ClientUser extends User {
   twoFactorAuthentication: boolean;
   blocks: Blocks;
   emails: Emails;
-  plan?: {
-    name: string;
-    space: number;
-    privateRepos: number;
-    collaborators: number;
+  plan: {
+    name?: string;
+    space?: number;
+    privateRepos?: number;
+    collaborators?: number;
   };
-  constructor(data: any, { client }: { client: Client }) {
+  constructor(data: ClientUserData, { client }: { client: Client }) {
     super(data, { client });
-    let { plan = {} }: any = data;
+    let { plan = {} }: { plan: ClientUserData["plan"] } = data;
     this.privateGists = data.private_gists;
     this.totalPrivateRepos = data.total_private_repos;
     this.ownedPrivateRepos = data.owned_private_repos;

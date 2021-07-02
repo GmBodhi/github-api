@@ -1,5 +1,3 @@
-import User from "../structures/user";
-
 export interface GistData {
   url: string;
   forks_url: string;
@@ -26,11 +24,11 @@ export interface GistData {
   comments: number;
   user: null | any;
   comments_url: string;
-  owner: User;
+  owner: UserData;
   forks: any[];
   history: [
     {
-      user: User;
+      user: UserData;
       version: string;
       committed_at: string;
       change_status: {
@@ -52,29 +50,44 @@ export interface UserData {
   gravatar_id: string;
   url: string;
   html_url: string;
-  followers_url: string;
-  following_url: string;
-  gists_url: string;
-  starred_url: string;
-  subscriptions_url: string;
-  organizations_url: string;
-  repos_url: string;
-  events_url: string;
-  received_events_url: string;
-  type: string;
-  site_admin: boolean;
+  followers_url?: string;
+  following_url?: string;
+  gists_url?: string;
+  starred_url?: string;
+  subscriptions_url?: string;
+  organizations_url?: string;
+  repos_url?: string;
+  events_url?: string;
+  received_events_url?: string;
+  type?: string;
+  site_admin?: boolean;
   name: null | string;
-  company: string;
-  blog: string;
-  location: string;
-  email: null;
-  hireable: null;
-  bio: string;
-  twitter_username: string | null;
-  public_repos: number;
-  public_gists: number;
-  followers: number;
-  following: number;
-  created_at: string;
-  updated_at: string;
+  company?: string;
+  blog?: string;
+  location?: string;
+  email?: null;
+  hireable?: null;
+  bio?: string;
+  twitter_username?: string | null;
+  public_repos?: number;
+  public_gists?: number;
+  followers?: number;
+  following?: number;
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface ClientUserData extends UserData {
+  plan: {
+    name?: string;
+    space?: number;
+    private_repos?: number;
+    collaborators?: number;
+  };
+  two_factor_authentication: boolean;
+  collaborators: number;
+  disk_usage: number;
+  total_private_repos: number;
+  owned_private_repos: number;
+  private_gists: string;
 }

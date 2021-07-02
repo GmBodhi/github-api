@@ -1,3 +1,4 @@
+import { UserData } from "../utils/rawdata";
 import Client from "./client";
 
 /**
@@ -17,31 +18,31 @@ class User {
   gravatarId: string;
   url: string;
   htmlUrl: string;
-  followingUrl: string;
-  followersUrl: string;
-  gistsUrl: string;
-  starredUrl: string;
-  subscriptionsUrl: string;
-  organizationsUrl: string;
-  reposUrl: string;
-  eventsUrl: string;
-  receivedEventsUrl: string;
-  type: string;
-  siteAdmin: boolean;
-  company: string;
-  blog: string;
-  location: string;
-  email: string;
-  hireable: boolean;
-  bio: string;
-  twitterUsername: string;
-  publicRepos: number;
-  publicGists: number;
-  followers: number;
-  following: number;
-  createdAt: string;
-  updatedAt: string;
-  constructor(data: any = {}, { client }: { client: Client }) {
+  followingUrl?: string;
+  followersUrl?: string;
+  gistsUrl?: string;
+  starredUrl?: string;
+  subscriptionsUrl?: string;
+  organizationsUrl?: string;
+  reposUrl?: string;
+  eventsUrl?: string;
+  receivedEventsUrl?: string;
+  type?: string;
+  siteAdmin?: boolean;
+  company?: string;
+  blog?: string;
+  location?: string;
+  email?: string | null;
+  hireable?: boolean | null;
+  bio?: string;
+  twitterUsername?: string | null;
+  publicRepos?: number;
+  publicGists?: number;
+  followers?: number;
+  following?: number;
+  createdAt?: string;
+  updatedAt?: string;
+  constructor(data: UserData, { client }: { client: Client }) {
     this.client = client;
     this.login = data.login;
     this.id = data.id;
