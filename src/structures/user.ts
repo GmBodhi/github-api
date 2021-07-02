@@ -7,7 +7,7 @@ class User {
   /**
    *
    * @param {Object} data - raw data from api
-   * @param {Object} param1
+   * @param {{Client}} extras - extra data
    */
   client: Client;
   login: string;
@@ -41,7 +41,7 @@ class User {
   following: number;
   createdAt: string;
   updatedAt: string;
-  constructor(data: any = {}, { client }: any) {
+  constructor(data: any = {}, { client }: { client: Client }) {
     this.client = client;
     this.login = data.login;
     this.id = data.id;

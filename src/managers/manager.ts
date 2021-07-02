@@ -3,9 +3,9 @@ import Client from "../structures/client";
 
 class BaseManager {
   client: Client;
-  url: string;
+  url?: string;
   cache: Collection<string | number, any>;
-  constructor({ client, url }: { client: Client; url: string }) {
+  constructor({ client, url }: { client: Client; url?: string }) {
     this.client = client;
     this.url = url;
     this.cache = new Collection();

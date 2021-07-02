@@ -23,7 +23,7 @@ class Client extends Events.EventEmitter {
     this.user = null;
     this.api = new RestManager(this);
     this.ready = false;
-    this.users = new UserManager({ client: this, url: null });
+    this.users = new UserManager({ client: this });
     if (this.token)
       this.api
         .req("user")
