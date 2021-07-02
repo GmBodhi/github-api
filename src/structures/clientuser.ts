@@ -2,6 +2,7 @@ import User from "./user";
 import Blocks from "../structures/blocks";
 import Emails from "./emails";
 import Client from "./client";
+import { Response } from "node-fetch";
 
 class ClientUser extends User {
   privateGists: string;
@@ -43,11 +44,7 @@ class ClientUser extends User {
    * @returns - Returns updated user
    */
   async setEmail(email: string) {
-    return this.client.api.user
-      .patch({ body: { email } })
-      .then(({ r }: any) => {
-        return this._patch(r);
-      });
+    return await this.setAll({ email });
   }
 
   /**
@@ -56,84 +53,53 @@ class ClientUser extends User {
    * @returns - Returns updated user.
    */
   async setName(name: string) {
-    return this.client.api.user
-      .patch({ body: { name } })
-      .then(({ r, res }: any) => {
-        console.log(r, res);
-        return this._patch(r);
-      });
+    return await this.setAll({ name });
   }
 
+  /**
+   *
+   * @param blog - A string that you want to set as Blog
+   * @returns {User} - returns the updated user
+   */
   async setBlog(blog: string) {
-    return this.client.api.user.patch({ body: { blog } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return await this.setAll({ blog });
   }
 
-  async setTwitterUsername(twitter_username: string | null) {
-    return this.client.api.user
-      .patch({ body: { twitter_username } })
-      .then(({ r }: any) => {
-        return this._patch(r);
-      });
+  async setTwitterUsername(twitterUsername: string) {
+    return await this.setAll({ twitterUsername });
   }
 
   async setCompany(company: string) {
-    return this.client.api.user
-      .patch({ body: { company } })
-      .then(({ r }: any) => {
-        return this._patch(r);
-      });
+    return await this.setAll({ company });
   }
 
   async setLocation(location: string) {
-    return this.client.api.user
-      .patch({ body: { location } })
-      .then(({ r }: any) => {
-        return this._patch(r);
-      });
+    return await this.setAll({ location });
   }
 
   async setHireable(hireable: boolean) {
-    return this.client.api.user
-      .patch({ body: { hireable } })
-      .then(({ r }: any) => {
-        return this._patch(r);
-      });
+    return await this.setAll({ hireable });
   }
 
   async setBio(bio: string) {
-    return this.client.api.user.patch({ body: { bio } }).then(({ r }: any) => {
-      return this._patch(r);
-    });
+    return await this.setAll({ bio });
   }
 
-  async setAll(options: any) {
-    let {
-      email,
-      name,
-      blog,
-      twitterUsername,
-      company,
-      location,
-      hireable,
-      bio,
-    } = options;
-    return this.client.api.user
-      .patch({
-        body: {
-          email,
-          name,
-          blog,
-          twitter_username: twitterUsername,
-          company,
-          location,
-          hireable,
-          bio,
-        },
-      })
-      .then(({ r }: any) => {
-        return this._patch(r);
+  async setAll(options: {
+    email?: string;
+    name?: string;
+    blog?: string;
+    twitterUsername?: string;
+    company?: string;
+    location?: string;
+    hireable?: boolean;
+    bio?: string;
+  }) {
+    return await this.client.api
+      .req("user", { body: options })
+      .patch()
+      .then(async (r: Response) => {
+        return this._patch(await r.json());
       });
   }
 }

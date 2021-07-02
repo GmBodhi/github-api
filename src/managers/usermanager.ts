@@ -1,48 +1,47 @@
 import Manager from "./manager";
 import User from "../structures/user";
+import Client from "../structures/client";
+import { FetchOptions } from "../utils/constants";
+import { Response } from "node-fetch";
 
 class UserManager extends Manager {
-  constructor({ client, url }) {
+  constructor({ client, url }: { client: Client; url?: string }) {
     super({ client, url });
   }
 
-  async fetch(id, { cache = true, force = false } = {}) {
-    let o = this.cache.get(id);
-    if (o && !force) return o;
-    return this.client.api
-      .users(id)
-      .get()
-      .then(({ r }) => {
-        if (cache) return this.add(r.login, r);
-        return new User(r, { client: this.client });
+  async fetch(
+    username: string | { cache?: boolean; since?: string; perPage?: number },
+    options?: FetchOptions
+  ) {
+    if (typeof username === "string") {
+      const { force, cache } = options ?? {};
+      let o = this.cache.get(username);
+      if (o && !force) return o;
+      const res: Response = await this.client.api
+        .req(`users/${username}`)
+        .get();
+      res.json().then((b: any) => {
+        if (cache) return this.add(b.login, b);
+        return new User(b, { client: this.client });
       });
-  }
-
-  add(id, data) {
-    let o = new User(data, { client: this.client });
-    this.cache.set(id, o);
-    return o;
-  }
-
-  async get(query = {}, cache = true) {
-    let { since, perPage } = query;
-
-    this.client.api.users
-      .get({
-        query: `${since ? "since=" + since + "&" : ""}${
-          perPage ? "per_page=" + perPage : ""
-        }`,
-      })
-      .then(({ r = [] }) => {
-        let users = [];
-        r.forEach((user) => {
-          user = cache
-            ? this.add(user.login, user)
-            : new User(user, { client: this.client });
-          users.push(user);
+    } else {
+      const { since, perPage, cache = true } = username;
+      const res = await this.client.api
+        .req("users", { query: { perPage, since } })
+        .get();
+      return res.json().then((users: any[]) => {
+        users.forEach((u: any) => {
+          u = this.add(u.login, u, cache);
         });
         return users;
       });
+    }
+  }
+
+  add(id: string, data: any, cache: boolean = true) {
+    let o = new User(data, { client: this.client });
+    if (cache) this.cache.set(id, o);
+    return o;
   }
 }
 

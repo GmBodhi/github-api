@@ -1,3 +1,4 @@
+import { Response } from "node-fetch";
 import Client from "./client";
 
 class Follows {
@@ -7,12 +8,13 @@ class Follows {
   }
 
   async list(username: string, options: any) {
-    let { page, perPage } = options;
-    this.client.api.users(username).followers.get({
-      query: `${page ? "page=" + page + "&" : ""}${
-        perPage ? "per_page=" + perPage : ""
-      }`,
-    });
+    return await this.client.api
+      .req(`users/${username}/followers`, { query: options })
+      .get()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 }
 

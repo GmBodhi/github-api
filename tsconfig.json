@@ -1,13 +1,25 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES5",
-    "outDir": "dist",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"]
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "lib": ["esnext", "esnext.asynciterable"],
+        "declaration": true,
+        "outDir": "./dist",
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "tests", "dist"]
 }

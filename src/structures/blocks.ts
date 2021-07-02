@@ -1,36 +1,62 @@
+import { Response } from "node-fetch";
+import GHError from "../utils/error";
+import Base from "./base";
 import Client from "./client";
 import User from "./user";
 
-class Blocks {
-  client: Client;
+class Blocks extends Base {
   constructor(client: Client) {
-    this.client = client;
+    super(client);
   }
 
-  async list() {
-    return this.client.api.user.blocks.get().then(({ r }: any) => {
-      r.forEach((u: object) => (u = new User(r, { client: this.client })));
-      return r;
-    });
-  }
-
-  async has(username: string) {
-    return this.client.api.user
-      .blocks(username)
-      .get({ _: true })
-      .then(({ res }: any) => {
-        if ([204, 404].includes(res.status))
-          return res.status === 204 ? true : false;
-        throw new Error(res.statusText);
+  async list(): Promise<User[]> {
+    return await this.client.api
+      .req("user/blocks")
+      .get()
+      .then(async (r: Response) => {
+        const body = await r.json();
+        body.forEach((u: object) => (u = new User(r, { client: this.client })));
+        return body;
+      })
+      .catch((e: any) => {
+        throw new Error(e);
       });
   }
 
-  async unBlock(username: string) {
-    return await this.client.api.user.blocks(username).put();
+  async has(username: string): Promise<boolean> {
+    return this.client.api
+      .req(`user/blocks/${username}`, { _: true })
+      .get()
+      .then((res: Response) => {
+        if ([204, 404].includes(res.status))
+          return res.status === 204 ? true : false;
+        throw new GHError(res, res.json());
+      })
+      .catch((e: any) => {
+        throw new Error(e);
+      });
   }
 
-  async block(username: string) {
-    return await this.client.api.user.blocks(username).delete();
+  async unBlock(username: string): Promise<boolean> {
+    const res: Response = await this.client.api
+      .req(`user/blocks/${username}`, { _: true })
+      .put()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
+    return res.ok ? true : false;
+  }
+
+  async block(username: string): Promise<boolean> {
+    const res: Response = await this.client.api
+      .req(`user/blocks/${username}`, { _: true })
+      .delete()
+      .then((res: Response) => res.json())
+      .catch((e: any) => {
+        throw new Error(e);
+      });
+    return res.ok ? true : false;
   }
 }
 
