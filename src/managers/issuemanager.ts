@@ -7,6 +7,11 @@ class IssueManager extends Manager {
     super({ client, url });
   }
 
+  /**
+   * fetch the issue using it's number
+   * @param {number} id - issue number
+   * @param {FetchOptions} options
+   */
   async fetch(id: number, options: FetchOptions = {}) {}
 }
 

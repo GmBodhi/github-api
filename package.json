@@ -12,15 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/collection": "^0.1.6",
-    "@types/node-fetch": "^2.5.10",
-    "chai": "^4.3.4",
-    "mocha": "^9.0.0",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "@types/node": "^15.12.2",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.0",
+    "@types/node-fetch": "^2.5.10",
+    "@types/node": "^15.14.0",
     "jsdoc-json": "^2.0.2",
-    "ts-node": "^10.0.0",
     "tslib": "^2.3.0",
     "typedoc": "^0.21.2",
     "typescript": "^4.3.2"

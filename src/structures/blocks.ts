@@ -1,5 +1,6 @@
 import { Response } from "node-fetch";
 import GHError from "../utils/error";
+import { UserData } from "../utils/rawdata";
 import Base from "./base";
 import Client from "./client";
 import User from "./user";
@@ -14,8 +15,10 @@ class Blocks extends Base {
       .req("user/blocks")
       .get()
       .then(async (r: Response) => {
-        const body = await r.json();
-        body.forEach((u: object) => (u = new User(r, { client: this.client })));
+        const body: User[] = [];
+        (await r.json()).forEach((u: UserData) =>
+          body.push(new User(u, { client: this.client }))
+        );
         return body;
       })
       .catch((e: any) => {

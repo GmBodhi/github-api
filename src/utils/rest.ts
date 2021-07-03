@@ -55,8 +55,8 @@ class RestManager {
     patch: Function;
   } {
     const { query = {}, headers = {}, body = {}, _ } = options ?? {};
-    headers["accept"] = "application/vnd.github.v3+json";
-    headers["Authorization"] = `token ${this.client.token}`;
+    headers["accept"] ??= "application/vnd.github.v3+json";
+    headers["Authorization"] ??= `token ${this.client.token}`;
     return {
       post: () => makeReq({ path, query, body, headers, method: "post", _ }),
       get: () => makeReq({ path, query, body, headers, method: "get", _ }),
