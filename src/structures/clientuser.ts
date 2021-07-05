@@ -6,12 +6,11 @@ import { Response } from "node-fetch";
 import { ClientUserData } from "../utils/rawdata";
 
 class ClientUser extends User {
-  privateGists: string;
-  totalPrivateRepos: number;
-  ownedPrivateRepos: number;
-  diskUsage: number;
-  collaborators: number;
-  twoFactorAuthentication: boolean;
+  privateGists?: number;
+  totalPrivateRepos?: number;
+  ownedPrivateRepos?: number;
+  diskUsage?: number;
+  collaborators?: number;
   blocks: Blocks;
   emails: Emails;
   plan: {
@@ -22,20 +21,18 @@ class ClientUser extends User {
   };
   constructor(data: ClientUserData, { client }: { client: Client }) {
     super(data, { client });
-    let { plan = {} }: { plan: ClientUserData["plan"] } = data;
     this.privateGists = data.private_gists;
     this.totalPrivateRepos = data.total_private_repos;
     this.ownedPrivateRepos = data.owned_private_repos;
     this.diskUsage = data.disk_usage;
     this.collaborators = data.collaborators;
-    this.twoFactorAuthentication = data.two_factor_authentication;
     this.blocks = new Blocks(client);
     this.emails = new Emails(client);
     this.plan = {
-      name: plan.name,
-      space: plan.space,
-      privateRepos: plan.private_repos,
-      collaborators: plan.collaborators,
+      name: data.plan?.name,
+      space: data.plan?.space,
+      privateRepos: data.plan?.private_repos,
+      collaborators: data.plan?.collaborators,
     };
   }
 
