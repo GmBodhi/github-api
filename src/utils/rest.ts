@@ -68,4 +68,4 @@ class RestManager {
   }
 }
 
-export default RestManager;
+export { RestManager };
