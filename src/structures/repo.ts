@@ -93,6 +93,14 @@ class Repo extends Base {
   public get contributorsUrl() {
     return this.data.contributors_url;
   }
+
+  public get createdAt() {
+    return this.data.created_at;
+  }
+
+  // public get() {
+  //   return this.data
+  // }
 }
 
 export default Repo;
