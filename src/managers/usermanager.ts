@@ -20,7 +20,7 @@ class UserManager extends Manager {
       const res: Response = await this.client.api
         .req(`users/${username}`)
         .get();
-      res.json().then((b: any) => {
+      return res.json().then((b: any) => {
         if (cache) return this.add(b.login, b);
         return new User(b, { client: this.client });
       });

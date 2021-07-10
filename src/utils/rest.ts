@@ -10,14 +10,14 @@ async function makeReq({
   path,
   query = {},
   headers = {},
-  body = {},
+  body,
   method = "get",
   _,
 }: {
   path: string;
   query?: Partial<Record<string, unknown>>;
   headers?: Record<string, any>;
-  body?: Record<string, any>;
+  body?: Record<string, any> | undefined;
   method?: "post" | "get" | "delete" | "patch" | "put";
   _?: boolean | undefined;
 }): Promise<Response> {
@@ -26,7 +26,7 @@ async function makeReq({
     {
       method,
       headers,
-      body: JSON.stringify(snakeCasify(body)),
+      body: body ? JSON.stringify(snakeCasify(body)) : undefined,
     }
   );
   if (!res.ok && !_) throw new GHError(res, await res.json());
@@ -54,7 +54,7 @@ class RestManager {
     delete: Function;
     patch: Function;
   } {
-    const { query = {}, headers = {}, body = {}, _ } = options ?? {};
+    const { query = {}, headers = {}, body, _ } = options ?? {};
     headers["accept"] ??= "application/vnd.github.v3+json";
     headers["Authorization"] ??= `token ${this.client.token}`;
     return {
