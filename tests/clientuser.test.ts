@@ -18,7 +18,7 @@ describe("Login client and fetch a user", function () {
       expect(client.user, "user not null").not.to.be.equal(null);
       done();
       describe("changing user's profile details", function () {
-        this.timeout(5000);
+        this.timeout(10000);
         it("change user's name to a random value", (done) => {
           client.user.setName(getRandom()).then(() => done());
         });
