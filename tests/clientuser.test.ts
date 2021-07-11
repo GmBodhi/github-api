@@ -11,14 +11,14 @@ const client = new Client({
 const getRandom = () =>
   String.fromCharCode(65 + Math.floor(Math.random() * 26)) + Date.now();
 
-describe("Login client and fetch a user", function () {
-  this.timeout(5000);
+describe("Login client and test clientuser", function () {
+  this.timeout(10000);
   it("login the client", (done) => {
     client.on("ready", () => {
       expect(client.user, "user not null").not.to.be.equal(null);
       done();
       describe("changing user's profile details", function () {
-        this.timeout(10000);
+        this.timeout(20000);
         it("change user's name to a random value", (done) => {
           client.user.setName(getRandom()).then(() => done());
         });

@@ -19,6 +19,6 @@ jobs:
       - name: Build
         run: yarn build
       - name: Run Tests
-        run: npm t
+        run: yarn test
         env:
           TEST: ${{ secrets.TEST }}
