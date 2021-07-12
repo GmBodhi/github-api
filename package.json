@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
-    "docs": "typedoc src/index.ts --json docs/doc.json",
+    "docs": "sh docgen.sh",
+    "gendoc": "typedoc",
     "build": "tsc -p tsconfig.json"
   },
   "keywords": [],
