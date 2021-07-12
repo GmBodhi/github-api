@@ -5,4 +5,4 @@ const json = JSON.parse(readFileSync("./typedoc.json"));
 
 json.json = `docs/${version}.json`;
 
-writeFileSync("./typedoc.json", JSON.stringify(json));
+writeFileSync("./typedoc.json", JSON.stringify(json) + "\n");
