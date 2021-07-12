@@ -1,4 +1,5 @@
 import { expect } from "chai";
+import clientuser from "./clientuser.test";
 
 const assert = require("chai").assert;
 const { Client } = require("../dist");
@@ -24,6 +25,7 @@ describe("Login client and fetch a user", function () {
       expect(client.user, "user not null").not.to.be.equal(null);
       done();
       console.log(`Logged in as ${client.user.login}`);
+      clientuser(client, getRandom);
     });
   });
 });
