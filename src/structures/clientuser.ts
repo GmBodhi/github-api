@@ -97,7 +97,7 @@ class ClientUser extends User {
       .req("user", { body: options })
       .patch()
       .then(async (r: Response) => {
-        return this.constructor(await r.json());
+        return new ClientUser(await r.json(), { client: this.client });
       });
   }
 }
