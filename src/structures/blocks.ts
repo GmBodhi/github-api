@@ -30,10 +30,10 @@ class Blocks extends Base {
     return this.client.api
       .req(`user/blocks/${username}`, { _: true })
       .get()
-      .then((res: Response) => {
+      .then(async (res: Response) => {
         if ([204, 404].includes(res.status))
           return res.status === 204 ? true : false;
-        throw new GHError(res, res.json());
+        throw new GHError(res, await res.json());
       })
       .catch((e: any) => {
         throw new Error(e);
