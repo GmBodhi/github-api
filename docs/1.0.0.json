@@ -6910,8 +6910,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -6956,8 +6957,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7008,8 +7010,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7054,8 +7057,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7107,8 +7111,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7153,8 +7158,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7199,8 +7205,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7252,8 +7259,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
@@ -7298,8 +7306,9 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 142,
+										"name": "ClientUser"
 									}
 								],
 								"name": "Promise"
