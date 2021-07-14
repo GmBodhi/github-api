@@ -23,3 +23,6 @@ export type RepoData =
 
 export type ClientUserRepoListData =
   Endpoints["GET /user/repos"]["response"]["data"];
+
+export type IssueData =
+  Endpoints["GET /repos/{owner}/{repo}/issues/{issue_number}"];

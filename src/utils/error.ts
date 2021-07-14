@@ -1,9 +1,9 @@
-import { Body, Response } from "node-fetch";
+import { Response } from "node-fetch";
 
 class GHError extends Error {
-  constructor(res: Response, json: any = {}) {
+  constructor(res: Response, json: { message?: string } = {}) {
     super(res.statusText);
-    this.message = json.message;
+    this.message = json?.message ?? "No error data from api";
   }
 }
 

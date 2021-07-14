@@ -16,12 +16,12 @@ async function makeReq({
 }: {
   path: string;
   query?: Partial<Record<string, unknown>>;
-  headers?: Record<string, any>;
-  body?: Record<string, any> | undefined;
+  headers?: Record<string, string>;
+  body?: Record<string, unknown>;
   method?: "post" | "get" | "delete" | "patch" | "put";
-  _?: boolean | undefined;
+  _?: boolean;
 }): Promise<Response> {
-  const res = await fetch(
+  const res: Response = await fetch(
     `${Base}${path}?${new URLSearchParams(snakeCasify(query))}`,
     {
       method,
@@ -41,29 +41,34 @@ class RestManager {
 
   req(
     path: string,
-    options?: {
-      query?: Record<string, any>;
-      headers?: Record<string, any>;
-      body?: Record<string, any>;
-      _?: boolean | undefined;
-    }
+    options: {
+      query?: Record<string, unknown>;
+      headers?: Record<string, string>;
+      body?: Record<string, unknown>;
+      _?: boolean;
+      auth?: boolean;
+    } = {}
   ): {
-    post: Function;
-    get: Function;
-    put: Function;
-    delete: Function;
-    patch: Function;
+    post: () => Promise<Response>;
+    get: () => Promise<Response>;
+    put: () => Promise<Response>;
+    delete: () => Promise<Response>;
+    patch: () => Promise<Response>;
   } {
-    const { query = {}, headers = {}, body, _ } = options ?? {};
+    const { query = {}, headers = {}, body, _, auth = true } = options;
     headers["accept"] ??= "application/vnd.github.v3+json";
-    headers["Authorization"] ??= `token ${this.client.token}`;
+    if (auth) headers["Authorization"] ??= `token ${this.client.token}`;
     return {
-      post: () => makeReq({ path, query, body, headers, method: "post", _ }),
-      get: () => makeReq({ path, query, body, headers, method: "get", _ }),
-      patch: () => makeReq({ path, query, body, headers, method: "patch", _ }),
-      delete: () =>
+      post: (): Promise<Response> =>
+        makeReq({ path, query, body, headers, method: "post", _ }),
+      get: (): Promise<Response> =>
+        makeReq({ path, query, body, headers, method: "get", _ }),
+      patch: (): Promise<Response> =>
+        makeReq({ path, query, body, headers, method: "patch", _ }),
+      delete: (): Promise<Response> =>
         makeReq({ path, query, body, headers, method: "delete", _ }),
-      put: () => makeReq({ path, query, body, headers, method: "put", _ }),
+      put: (): Promise<Response> =>
+        makeReq({ path, query, body, headers, method: "put", _ }),
     };
   }
 }

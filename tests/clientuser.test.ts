@@ -16,6 +16,9 @@ export default function (client: Client, getRandom: any) {
       it("change user's location to a random value", (done) => {
         client.user?.setLocation(getRandom()).then(() => done());
       });
+      it("change user's twitter username to a random value", (done) => {
+        client.user?.setTwitterUsername(getRandom()).then(() => done());
+      });
     });
   });
 }

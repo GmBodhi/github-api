@@ -12,10 +12,10 @@ class Gist extends Base {
     this.forks = new ForkManager(client, { url: data.forks_url });
   }
 
-  get url() {
+  get url(): GistData["url"] {
     return this.data.url;
   }
-  get htmlUrl() {
+  get htmlUrl(): GistData["html_url"] {
     return this.data.html_url;
   }
 }

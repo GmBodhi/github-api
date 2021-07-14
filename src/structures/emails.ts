@@ -7,7 +7,15 @@ class Emails extends Base {
     super(client);
   }
 
-  async setPrimaryVisibility(visibility: any, email?: string) {
+  async setPrimaryVisibility(
+    visibility: any,
+    email?: string
+  ): Promise<{
+    email: string;
+    verified: boolean;
+    primary: boolean;
+    visibility: string;
+  }> {
     return await this.client.api
       .req("user/email/visibility", { body: { visibility, email } })
       .patch()
