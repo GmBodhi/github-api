@@ -1,11 +1,9 @@
-name: Tests
+name: Lint
 
-on:
-  push:
-    branches: [dev]
+on: [push, pull_request]
 
 jobs:
-  Test:
+  Lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -16,9 +14,5 @@ jobs:
           node-version: 14
       - name: Install dependencies
         run: yarn
-      - name: Build
-        run: yarn build
-      - name: Run Tests
-        run: yarn test
-        env:
-          TEST: ${{ secrets.TEST }}
+      - name: Run Lint
+        run: yarn lint

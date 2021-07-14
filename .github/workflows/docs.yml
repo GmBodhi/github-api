@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 14
       - name: Install dependencies
-        run: yarn -D
+        run: yarn
       - name: Run Docs
         run: yarn docs
       - name: Commit docs
