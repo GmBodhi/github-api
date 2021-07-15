@@ -9,39 +9,21 @@ class UserManager extends Manager {
     super({ client, url });
   }
 
-  async fetch(
-    username: string | { cache?: boolean; since?: string; perPage?: number },
-    options?: FetchOptions
-  ) {
-    if (typeof username === "string") {
-      const { force, cache } = options ?? {};
-      let o = this.cache.get(username);
-      if (o && !force) return o;
-      const res: Response = await this.client.api
-        .req(`users/${username}`)
-        .get();
-      return res.json().then((b: any) => {
-        if (cache) return this.add(b.login, b);
-        return new User(b, { client: this.client });
-      });
-    } else {
-      const { since, perPage, cache = true } = username;
-      const res = await this.client.api
-        .req("users", { query: { perPage, since } })
-        .get();
-      return res.json().then((users: any[]) => {
-        users.forEach((u: any) => {
-          u = this.add(u.login, u, cache);
-        });
-        return users;
-      });
-    }
+  public async fetch(username: string, options: FetchOptions = {}) {
+    const { auth = true } = options;
+    const res: Response = await this.client.api
+      .req(`users/${username}`, { auth })
+      .get();
+    return res.json().then((b: any) => {
+      return new User(b, { client: this.client });
+    });
   }
 
-  add(id: string, data: any, cache: boolean = true) {
-    let o = new User(data, { client: this.client });
-    if (cache) this.cache.set(id, o);
-    return o;
+  public async *list({
+    since,
+    perPage,
+  }: { since?: string; perPage?: number } = {}): AsyncGenerator {
+    let next, previous;
   }
 }
 

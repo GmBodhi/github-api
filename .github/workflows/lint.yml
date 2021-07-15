@@ -3,7 +3,7 @@ name: Lint
 on:
   push:
   pull_request:
-  shedule:
+  schedule:
     - cron: "0 0 * * *"
 
 jobs:
