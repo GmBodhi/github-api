@@ -138,7 +138,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2852,
+						"id": 2844,
 						"name": "ArtifactsManager"
 					}
 				},
@@ -238,28 +238,28 @@
 			]
 		},
 		{
-			"id": 2852,
+			"id": 2844,
 			"name": "ArtifactsManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2853,
+					"id": 2845,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2854,
+							"id": 2846,
 							"name": "new ArtifactsManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2855,
+									"id": 2847,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -267,14 +267,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2856,
+											"id": 2848,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2857,
+													"id": 2849,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -298,7 +298,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2857
+														2849
 													]
 												}
 											]
@@ -306,7 +306,7 @@
 									}
 								},
 								{
-									"id": 2858,
+									"id": 2850,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -314,14 +314,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2859,
+											"id": 2851,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2860,
+													"id": 2852,
 													"name": "owner",
 													"kind": 1024,
 													"kindString": "Property",
@@ -339,7 +339,7 @@
 													}
 												},
 												{
-													"id": 2861,
+													"id": 2853,
 													"name": "repo",
 													"kind": 1024,
 													"kindString": "Property",
@@ -362,8 +362,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2860,
-														2861
+														2852,
+														2853
 													]
 												}
 											]
@@ -373,7 +373,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2852,
+								"id": 2844,
 								"name": "ArtifactsManager"
 							},
 							"overwrites": {
@@ -390,49 +390,7 @@
 					}
 				},
 				{
-					"id": 2881,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2844,
-						"name": "Manager.cache"
-					}
-				},
-				{
-					"id": 2879,
+					"id": 2871,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -440,7 +398,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -456,7 +414,7 @@
 					}
 				},
 				{
-					"id": 2862,
+					"id": 2854,
 					"name": "owner",
 					"kind": 1024,
 					"kindString": "Property",
@@ -474,7 +432,7 @@
 					}
 				},
 				{
-					"id": 2863,
+					"id": 2855,
 					"name": "repo",
 					"kind": 1024,
 					"kindString": "Property",
@@ -492,7 +450,7 @@
 					}
 				},
 				{
-					"id": 2880,
+					"id": 2872,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -502,7 +460,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -517,77 +475,7 @@
 					}
 				},
 				{
-					"id": 2882,
-					"name": "add",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 14,
-							"character": 5
-						}
-					],
-					"signatures": [
-						{
-							"id": 2883,
-							"name": "add",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2884,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								},
-								{
-									"id": 2885,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2846,
-								"name": "Manager.add"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2845,
-						"name": "Manager.add"
-					}
-				},
-				{
-					"id": 2873,
+					"id": 2865,
 					"name": "delete",
 					"kind": 2048,
 					"kindString": "Method",
@@ -601,14 +489,14 @@
 					],
 					"signatures": [
 						{
-							"id": 2874,
+							"id": 2866,
 							"name": "delete",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2875,
+									"id": 2867,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -633,7 +521,7 @@
 					]
 				},
 				{
-					"id": 2876,
+					"id": 2868,
 					"name": "download",
 					"kind": 2048,
 					"kindString": "Method",
@@ -647,14 +535,14 @@
 					],
 					"signatures": [
 						{
-							"id": 2877,
+							"id": 2869,
 							"name": "download",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2878,
+									"id": 2870,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -679,7 +567,7 @@
 					]
 				},
 				{
-					"id": 2870,
+					"id": 2862,
 					"name": "get",
 					"kind": 2048,
 					"kindString": "Method",
@@ -693,14 +581,14 @@
 					],
 					"signatures": [
 						{
-							"id": 2871,
+							"id": 2863,
 							"name": "get",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2872,
+									"id": 2864,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -725,7 +613,7 @@
 					]
 				},
 				{
-					"id": 2864,
+					"id": 2856,
 					"name": "list",
 					"kind": 2048,
 					"kindString": "Method",
@@ -739,14 +627,14 @@
 					],
 					"signatures": [
 						{
-							"id": 2865,
+							"id": 2857,
 							"name": "list",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2866,
+									"id": 2858,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -754,14 +642,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2867,
+											"id": 2859,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2868,
+													"id": 2860,
 													"name": "page",
 													"kind": 1024,
 													"kindString": "Property",
@@ -781,7 +669,7 @@
 													}
 												},
 												{
-													"id": 2869,
+													"id": 2861,
 													"name": "perPage",
 													"kind": 1024,
 													"kindString": "Property",
@@ -806,8 +694,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2868,
-														2869
+														2860,
+														2861
 													]
 												}
 											]
@@ -827,65 +715,6 @@
 							}
 						}
 					]
-				},
-				{
-					"id": 2886,
-					"name": "resolve",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 2887,
-							"name": "resolve",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2888,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2850,
-								"name": "Manager.resolve"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2849,
-						"name": "Manager.resolve"
-					}
 				}
 			],
 			"groups": [
@@ -893,30 +722,27 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2853
+						2845
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2881,
-						2879,
-						2862,
-						2863,
-						2880
+						2871,
+						2854,
+						2855,
+						2872
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2882,
-						2873,
-						2876,
-						2870,
-						2864,
-						2886
+						2865,
+						2868,
+						2862,
+						2856
 					]
 				}
 			],
@@ -1542,7 +1368,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2944,
+						"id": 2904,
 						"name": "UserManager"
 					}
 				},
@@ -8198,28 +8024,28 @@
 			]
 		},
 		{
-			"id": 2889,
+			"id": 2873,
 			"name": "ForkManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2890,
+					"id": 2874,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2891,
+							"id": 2875,
 							"name": "new ForkManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2892,
+									"id": 2876,
 									"name": "client",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8231,7 +8057,7 @@
 									}
 								},
 								{
-									"id": 2893,
+									"id": 2877,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8239,14 +8065,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2894,
+											"id": 2878,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2895,
+													"id": 2879,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -8271,7 +8097,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2895
+														2879
 													]
 												}
 											]
@@ -8281,7 +8107,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2889,
+								"id": 2873,
 								"name": "ForkManager"
 							},
 							"overwrites": {
@@ -8298,49 +8124,7 @@
 					}
 				},
 				{
-					"id": 2898,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2844,
-						"name": "Manager.cache"
-					}
-				},
-				{
-					"id": 2896,
+					"id": 2880,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8348,7 +8132,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -8364,7 +8148,7 @@
 					}
 				},
 				{
-					"id": 2897,
+					"id": 2881,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8374,7 +8158,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -8387,135 +8171,6 @@
 						"id": 2843,
 						"name": "Manager.url"
 					}
-				},
-				{
-					"id": 2899,
-					"name": "add",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 14,
-							"character": 5
-						}
-					],
-					"signatures": [
-						{
-							"id": 2900,
-							"name": "add",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2901,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								},
-								{
-									"id": 2902,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2846,
-								"name": "Manager.add"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2845,
-						"name": "Manager.add"
-					}
-				},
-				{
-					"id": 2903,
-					"name": "resolve",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 2904,
-							"name": "resolve",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2905,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2850,
-								"name": "Manager.resolve"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2849,
-						"name": "Manager.resolve"
-					}
 				}
 			],
 			"groups": [
@@ -8523,24 +8178,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2890
+						2874
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2898,
-						2896,
-						2897
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						2899,
-						2903
+						2880,
+						2881
 					]
 				}
 			],
@@ -18266,7 +17912,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2889,
+						"id": 2873,
 						"name": "ForkManager"
 					}
 				},
@@ -18496,28 +18142,28 @@
 			]
 		},
 		{
-			"id": 2906,
+			"id": 2882,
 			"name": "IssueManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2907,
+					"id": 2883,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2908,
+							"id": 2884,
 							"name": "new IssueManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2909,
+									"id": 2885,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -18525,14 +18171,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2910,
+											"id": 2886,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2911,
+													"id": 2887,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -18551,7 +18197,7 @@
 													}
 												},
 												{
-													"id": 2912,
+													"id": 2888,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -18574,8 +18220,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2911,
-														2912
+														2887,
+														2888
 													]
 												}
 											]
@@ -18585,7 +18231,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2906,
+								"id": 2882,
 								"name": "IssueManager"
 							},
 							"overwrites": {
@@ -18602,49 +18248,7 @@
 					}
 				},
 				{
-					"id": 2919,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2844,
-						"name": "Manager.cache"
-					}
-				},
-				{
-					"id": 2917,
+					"id": 2893,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -18652,7 +18256,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -18668,7 +18272,7 @@
 					}
 				},
 				{
-					"id": 2918,
+					"id": 2894,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -18678,7 +18282,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -18693,77 +18297,7 @@
 					}
 				},
 				{
-					"id": 2920,
-					"name": "add",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 14,
-							"character": 5
-						}
-					],
-					"signatures": [
-						{
-							"id": 2921,
-							"name": "add",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2922,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								},
-								{
-									"id": 2923,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2846,
-								"name": "Manager.add"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2845,
-						"name": "Manager.add"
-					}
-				},
-				{
-					"id": 2913,
+					"id": 2889,
 					"name": "fetch",
 					"kind": 2048,
 					"kindString": "Method",
@@ -18777,7 +18311,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2914,
+							"id": 2890,
 							"name": "fetch",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -18787,7 +18321,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2915,
+									"id": 2891,
 									"name": "id",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -18801,7 +18335,7 @@
 									}
 								},
 								{
-									"id": 2916,
+									"id": 2892,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -18828,65 +18362,6 @@
 							}
 						}
 					]
-				},
-				{
-					"id": 2924,
-					"name": "resolve",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 2925,
-							"name": "resolve",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2926,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2850,
-								"name": "Manager.resolve"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2849,
-						"name": "Manager.resolve"
-					}
 				}
 			],
 			"groups": [
@@ -18894,25 +18369,22 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2907
+						2883
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2919,
-						2917,
-						2918
+						2893,
+						2894
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2920,
-						2913,
-						2924
+						2889
 					]
 				}
 			],
@@ -18976,7 +18448,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/manager.ts",
-															"line": 8,
+															"line": 6,
 															"character": 39
 														}
 													],
@@ -18997,7 +18469,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/manager.ts",
-															"line": 8,
+															"line": 6,
 															"character": 52
 														}
 													],
@@ -19030,43 +18502,6 @@
 					]
 				},
 				{
-					"id": 2844,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					}
-				},
-				{
 					"id": 2842,
 					"name": "client",
 					"kind": 1024,
@@ -19075,7 +18510,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -19096,7 +18531,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -19104,115 +18539,6 @@
 						"type": "intrinsic",
 						"name": "string"
 					}
-				},
-				{
-					"id": 2845,
-					"name": "add",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 14,
-							"character": 5
-						}
-					],
-					"signatures": [
-						{
-							"id": 2846,
-							"name": "add",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2847,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								},
-								{
-									"id": 2848,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							}
-						}
-					]
-				},
-				{
-					"id": 2849,
-					"name": "resolve",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 2850,
-							"name": "resolve",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2851,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							}
-						}
-					]
 				}
 			],
 			"groups": [
@@ -19227,51 +18553,42 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2844,
 						2842,
 						2843
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						2845,
-						2849
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/managers/manager.ts",
-					"line": 4,
+					"line": 3,
 					"character": 17
 				}
 			],
 			"extendedBy": [
 				{
 					"type": "reference",
-					"id": 2852,
+					"id": 2844,
 					"name": "ArtifactsManager"
 				},
 				{
 					"type": "reference",
-					"id": 2889,
+					"id": 2873,
 					"name": "ForkManager"
 				},
 				{
 					"type": "reference",
-					"id": 2906,
+					"id": 2882,
 					"name": "IssueManager"
 				},
 				{
 					"type": "reference",
-					"id": 2927,
+					"id": 2895,
 					"name": "RepoManager"
 				},
 				{
 					"type": "reference",
-					"id": 2944,
+					"id": 2904,
 					"name": "UserManager"
 				}
 			]
@@ -59850,7 +59167,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2889,
+						"id": 2873,
 						"name": "ForkManager"
 					}
 				},
@@ -60701,28 +60018,28 @@
 			]
 		},
 		{
-			"id": 2927,
+			"id": 2895,
 			"name": "RepoManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2928,
+					"id": 2896,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2929,
+							"id": 2897,
 							"name": "new RepoManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2930,
+									"id": 2898,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -60730,14 +60047,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2931,
+											"id": 2899,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2932,
+													"id": 2900,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -60756,7 +60073,7 @@
 													}
 												},
 												{
-													"id": 2933,
+													"id": 2901,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -60779,8 +60096,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2932,
-														2933
+														2900,
+														2901
 													]
 												}
 											]
@@ -60790,7 +60107,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2927,
+								"id": 2895,
 								"name": "RepoManager"
 							},
 							"overwrites": {
@@ -60807,49 +60124,7 @@
 					}
 				},
 				{
-					"id": 2936,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2844,
-						"name": "Manager.cache"
-					}
-				},
-				{
-					"id": 2934,
+					"id": 2902,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -60857,7 +60132,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -60873,7 +60148,7 @@
 					}
 				},
 				{
-					"id": 2935,
+					"id": 2903,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -60883,7 +60158,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -60896,135 +60171,6 @@
 						"id": 2843,
 						"name": "Manager.url"
 					}
-				},
-				{
-					"id": 2937,
-					"name": "add",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 14,
-							"character": 5
-						}
-					],
-					"signatures": [
-						{
-							"id": 2938,
-							"name": "add",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2939,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								},
-								{
-									"id": 2940,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2846,
-								"name": "Manager.add"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2845,
-						"name": "Manager.add"
-					}
-				},
-				{
-					"id": 2941,
-					"name": "resolve",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
-						}
-					],
-					"signatures": [
-						{
-							"id": 2942,
-							"name": "resolve",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2943,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 2850,
-								"name": "Manager.resolve"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2849,
-						"name": "Manager.resolve"
-					}
 				}
 			],
 			"groups": [
@@ -61032,24 +60178,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2928
+						2896
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2936,
-						2934,
-						2935
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						2937,
-						2941
+						2902,
+						2903
 					]
 				}
 			],
@@ -64057,28 +63194,28 @@
 			]
 		},
 		{
-			"id": 2944,
+			"id": 2904,
 			"name": "UserManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2945,
+					"id": 2905,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2946,
+							"id": 2906,
 							"name": "new UserManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2947,
+									"id": 2907,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -64086,14 +63223,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2948,
+											"id": 2908,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2949,
+													"id": 2909,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -64112,7 +63249,7 @@
 													}
 												},
 												{
-													"id": 2950,
+													"id": 2910,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -64137,8 +63274,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2949,
-														2950
+														2909,
+														2910
 													]
 												}
 											]
@@ -64148,7 +63285,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2944,
+								"id": 2904,
 								"name": "UserManager"
 							},
 							"overwrites": {
@@ -64165,49 +63302,7 @@
 					}
 				},
 				{
-					"id": 2966,
-					"name": "cache",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/manager.ts",
-							"line": 7,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
-							},
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Collection"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2844,
-						"name": "Manager.cache"
-					}
-				},
-				{
-					"id": 2964,
+					"id": 2921,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -64215,7 +63310,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 5,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -64231,7 +63326,7 @@
 					}
 				},
 				{
-					"id": 2965,
+					"id": 2922,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -64241,7 +63336,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 6,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -64256,29 +63351,31 @@
 					}
 				},
 				{
-					"id": 2959,
-					"name": "add",
+					"id": 2911,
+					"name": "fetch",
 					"kind": 2048,
 					"kindString": "Method",
-					"flags": {},
+					"flags": {
+						"isPublic": true
+					},
 					"sources": [
 						{
 							"fileName": "src/managers/usermanager.ts",
-							"line": 41,
-							"character": 5
+							"line": 12,
+							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2960,
-							"name": "add",
+							"id": 2912,
+							"name": "fetch",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2961,
-									"name": "id",
+									"id": 2913,
+									"name": "username",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -64288,187 +63385,25 @@
 									}
 								},
 								{
-									"id": 2962,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 2963,
-									"name": "cache",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "boolean"
-									},
-									"defaultValue": "true"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"id": 2700,
-								"name": "User"
-							},
-							"overwrites": {
-								"type": "reference",
-								"id": 2846,
-								"name": "Manager.add"
-							}
-						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"id": 2845,
-						"name": "Manager.add"
-					}
-				},
-				{
-					"id": 2951,
-					"name": "fetch",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/usermanager.ts",
-							"line": 12,
-							"character": 13
-						}
-					],
-					"signatures": [
-						{
-							"id": 2952,
-							"name": "fetch",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2953,
-									"name": "username",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "reflection",
-												"declaration": {
-													"id": 2954,
-													"name": "__type",
-													"kind": 65536,
-													"kindString": "Type literal",
-													"flags": {},
-													"children": [
-														{
-															"id": 2955,
-															"name": "cache",
-															"kind": 1024,
-															"kindString": "Property",
-															"flags": {
-																"isOptional": true
-															},
-															"sources": [
-																{
-																	"fileName": "src/managers/usermanager.ts",
-																	"line": 13,
-																	"character": 30
-																}
-															],
-															"type": {
-																"type": "intrinsic",
-																"name": "boolean"
-															}
-														},
-														{
-															"id": 2957,
-															"name": "perPage",
-															"kind": 1024,
-															"kindString": "Property",
-															"flags": {
-																"isOptional": true
-															},
-															"sources": [
-																{
-																	"fileName": "src/managers/usermanager.ts",
-																	"line": 13,
-																	"character": 65
-																}
-															],
-															"type": {
-																"type": "intrinsic",
-																"name": "number"
-															}
-														},
-														{
-															"id": 2956,
-															"name": "since",
-															"kind": 1024,
-															"kindString": "Property",
-															"flags": {
-																"isOptional": true
-															},
-															"sources": [
-																{
-																	"fileName": "src/managers/usermanager.ts",
-																	"line": 13,
-																	"character": 47
-																}
-															],
-															"type": {
-																"type": "intrinsic",
-																"name": "string"
-															}
-														}
-													],
-													"groups": [
-														{
-															"title": "Properties",
-															"kind": 1024,
-															"children": [
-																2955,
-																2957,
-																2956
-															]
-														}
-													]
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": 2958,
+									"id": 2914,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
-									"flags": {
-										"isOptional": true
-									},
+									"flags": {},
 									"type": {
 										"type": "reference",
 										"name": "FetchOptions"
-									}
+									},
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reference",
+										"id": 2700,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -64477,63 +63412,119 @@
 					]
 				},
 				{
-					"id": 2967,
-					"name": "resolve",
+					"id": 2915,
+					"name": "list",
 					"kind": 2048,
 					"kindString": "Method",
-					"flags": {},
+					"flags": {
+						"isPublic": true
+					},
 					"sources": [
 						{
-							"fileName": "src/managers/manager.ts",
-							"line": 19,
-							"character": 9
+							"fileName": "src/managers/usermanager.ts",
+							"line": 22,
+							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2968,
-							"name": "resolve",
+							"id": 2916,
+							"name": "list",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2969,
-									"name": "id",
+									"id": 2917,
+									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "intrinsic",
-												"name": "number"
-											}
-										]
-									}
+										"type": "reflection",
+										"declaration": {
+											"id": 2918,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2920,
+													"name": "perPage",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/managers/usermanager.ts",
+															"line": 25,
+															"character": 30
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2919,
+													"name": "since",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/managers/usermanager.ts",
+															"line": 25,
+															"character": 12
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2920,
+														2919
+													]
+												}
+											]
+										}
+									},
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							},
-							"inheritedFrom": {
 								"type": "reference",
-								"id": 2850,
-								"name": "Manager.resolve"
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "AsyncGenerator"
 							}
 						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2849,
-						"name": "Manager.resolve"
-					}
+					]
 				}
 			],
 			"groups": [
@@ -64541,25 +63532,23 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2945
+						2905
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2966,
-						2964,
-						2965
+						2921,
+						2922
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2959,
-						2951,
-						2967
+						2911,
+						2915
 					]
 				}
 			],
@@ -64585,22 +63574,22 @@
 			"kind": 128,
 			"children": [
 				109,
-				2852,
+				2844,
 				121,
 				126,
 				1,
 				142,
 				323,
 				353,
-				2889,
+				2873,
 				368,
 				818,
-				2906,
+				2882,
 				2835,
 				824,
-				2927,
+				2895,
 				2700,
-				2944
+				2904
 			]
 		}
 	],
