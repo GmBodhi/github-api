@@ -1,8 +1,10 @@
 name: Lint
 
-on: [push, pull_request]
-
-cron: 0 0 * * *
+on:
+  push:
+  pull_request:
+  shedule:
+    - cron: "0 0 * * *"
 
 jobs:
   Lint:
