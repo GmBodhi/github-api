@@ -12,7 +12,7 @@ class IssueManager extends Manager {
    * @param {number} id - issue number
    * @param {FetchOptions} options
    */
-  async fetch(id: number, options: FetchOptions = {}) {}
+  async fetch(id: number, options: FetchOptions): Promise<void> {}
 }
 
 export default IssueManager;

@@ -33,8 +33,8 @@ class Client extends Events.EventEmitter {
           this.ready = true;
           this.emit("ready");
         })
-        .catch((e: any) => {
-          throw new Error(e);
+        .catch((e: Error) => {
+          throw e;
         });
     else {
       this.ready = true;
