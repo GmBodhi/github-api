@@ -282,7 +282,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 9,
+															"line": 10,
 															"character": 24
 														}
 													],
@@ -329,7 +329,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 10,
+															"line": 11,
 															"character": 28
 														}
 													],
@@ -347,7 +347,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 10,
+															"line": 11,
 															"character": 42
 														}
 													],
@@ -390,7 +390,7 @@
 					}
 				},
 				{
-					"id": 2868,
+					"id": 2893,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -422,7 +422,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 6,
+							"line": 7,
 							"character": 7
 						}
 					],
@@ -440,7 +440,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 7,
+							"line": 8,
 							"character": 6
 						}
 					],
@@ -450,7 +450,7 @@
 					}
 				},
 				{
-					"id": 2869,
+					"id": 2894,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -475,7 +475,7 @@
 					}
 				},
 				{
-					"id": 2862,
+					"id": 2887,
 					"name": "delete",
 					"kind": 2048,
 					"kindString": "Method",
@@ -483,20 +483,20 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 37,
+							"line": 43,
 							"character": 14
 						}
 					],
 					"signatures": [
 						{
-							"id": 2863,
+							"id": 2888,
 							"name": "delete",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2864,
+									"id": 2889,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -512,7 +512,7 @@
 								"typeArguments": [
 									{
 										"type": "intrinsic",
-										"name": "any"
+										"name": "unknown"
 									}
 								],
 								"name": "Promise"
@@ -521,7 +521,7 @@
 					]
 				},
 				{
-					"id": 2865,
+					"id": 2890,
 					"name": "download",
 					"kind": 2048,
 					"kindString": "Method",
@@ -529,20 +529,20 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 45,
+							"line": 51,
 							"character": 16
 						}
 					],
 					"signatures": [
 						{
-							"id": 2866,
+							"id": 2891,
 							"name": "download",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2867,
+									"id": 2892,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -558,7 +558,7 @@
 								"typeArguments": [
 									{
 										"type": "intrinsic",
-										"name": "any"
+										"name": "unknown"
 									}
 								],
 								"name": "Promise"
@@ -567,7 +567,7 @@
 					]
 				},
 				{
-					"id": 2859,
+					"id": 2873,
 					"name": "get",
 					"kind": 2048,
 					"kindString": "Method",
@@ -575,20 +575,20 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 29,
+							"line": 33,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2860,
+							"id": 2874,
 							"name": "get",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2861,
+									"id": 2875,
 									"name": "artifactId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -603,8 +603,270 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reflection",
+										"declaration": {
+											"id": 2876,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2882,
+													"name": "archive_download_url",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7398,
+															"character": 26
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 2884,
+													"name": "created_at",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7401,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "intrinsic",
+																"name": "string"
+															}
+														]
+													}
+												},
+												{
+													"id": 2883,
+													"name": "expired",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"comment": {
+														"shortText": "Whether or not the artifact has expired."
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7400,
+															"character": 13
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												},
+												{
+													"id": 2885,
+													"name": "expires_at",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7402,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "intrinsic",
+																"name": "string"
+															}
+														]
+													}
+												},
+												{
+													"id": 2877,
+													"name": "id",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7391,
+															"character": 8
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2879,
+													"name": "name",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"comment": {
+														"shortText": "The name of the artifact."
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7394,
+															"character": 10
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 2878,
+													"name": "node_id",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7392,
+															"character": 13
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 2880,
+													"name": "size_in_bytes",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"comment": {
+														"shortText": "The size in bytes of the artifact."
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7396,
+															"character": 19
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2886,
+													"name": "updated_at",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7403,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "intrinsic",
+																"name": "string"
+															}
+														]
+													}
+												},
+												{
+													"id": 2881,
+													"name": "url",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 7397,
+															"character": 9
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2882,
+														2884,
+														2883,
+														2885,
+														2877,
+														2879,
+														2878,
+														2880,
+														2886,
+														2881
+													]
+												}
+											]
+										}
 									}
 								],
 								"name": "Promise"
@@ -621,7 +883,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 16,
+							"line": 17,
 							"character": 12
 						}
 					],
@@ -659,8 +921,8 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 16,
-															"character": 28
+															"line": 18,
+															"character": 8
 														}
 													],
 													"type": {
@@ -679,8 +941,8 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 16,
-															"character": 46
+															"line": 19,
+															"character": 11
 														}
 													],
 													"type": {
@@ -707,8 +969,331 @@
 								"type": "reference",
 								"typeArguments": [
 									{
-										"type": "intrinsic",
-										"name": "any"
+										"type": "reflection",
+										"declaration": {
+											"id": 2859,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2861,
+													"name": "artifacts",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 18720,
+															"character": 21
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reflection",
+															"declaration": {
+																"id": 2862,
+																"name": "__type",
+																"kind": 65536,
+																"kindString": "Type literal",
+																"flags": {},
+																"children": [
+																	{
+																		"id": 2868,
+																		"name": "archive_download_url",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7398,
+																				"character": 26
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 2870,
+																		"name": "created_at",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7401,
+																				"character": 16
+																			}
+																		],
+																		"type": {
+																			"type": "union",
+																			"types": [
+																				{
+																					"type": "literal",
+																					"value": null
+																				},
+																				{
+																					"type": "intrinsic",
+																					"name": "string"
+																				}
+																			]
+																		}
+																	},
+																	{
+																		"id": 2869,
+																		"name": "expired",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"comment": {
+																			"shortText": "Whether or not the artifact has expired."
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7400,
+																				"character": 13
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "boolean"
+																		}
+																	},
+																	{
+																		"id": 2871,
+																		"name": "expires_at",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7402,
+																				"character": 16
+																			}
+																		],
+																		"type": {
+																			"type": "union",
+																			"types": [
+																				{
+																					"type": "literal",
+																					"value": null
+																				},
+																				{
+																					"type": "intrinsic",
+																					"name": "string"
+																				}
+																			]
+																		}
+																	},
+																	{
+																		"id": 2863,
+																		"name": "id",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7391,
+																				"character": 8
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "number"
+																		}
+																	},
+																	{
+																		"id": 2865,
+																		"name": "name",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"comment": {
+																			"shortText": "The name of the artifact."
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7394,
+																				"character": 10
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 2864,
+																		"name": "node_id",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7392,
+																				"character": 13
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"id": 2866,
+																		"name": "size_in_bytes",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"comment": {
+																			"shortText": "The size in bytes of the artifact."
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7396,
+																				"character": 19
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "number"
+																		}
+																	},
+																	{
+																		"id": 2872,
+																		"name": "updated_at",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7403,
+																				"character": 16
+																			}
+																		],
+																		"type": {
+																			"type": "union",
+																			"types": [
+																				{
+																					"type": "literal",
+																					"value": null
+																				},
+																				{
+																					"type": "intrinsic",
+																					"name": "string"
+																				}
+																			]
+																		}
+																	},
+																	{
+																		"id": 2867,
+																		"name": "url",
+																		"kind": 1024,
+																		"kindString": "Property",
+																		"flags": {
+																			"isExternal": true
+																		},
+																		"sources": [
+																			{
+																				"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+																				"line": 7397,
+																				"character": 9
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	}
+																],
+																"groups": [
+																	{
+																		"title": "Properties",
+																		"kind": 1024,
+																		"children": [
+																			2868,
+																			2870,
+																			2869,
+																			2871,
+																			2863,
+																			2865,
+																			2864,
+																			2866,
+																			2872,
+																			2867
+																		]
+																	}
+																]
+															}
+														}
+													}
+												},
+												{
+													"id": 2860,
+													"name": "total_count",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@octokit/openapi-types/types.d.ts",
+															"line": 18719,
+															"character": 23
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2861,
+														2860
+													]
+												}
+											]
+										}
 									}
 								],
 								"name": "Promise"
@@ -729,19 +1314,19 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2868,
+						2893,
 						2851,
 						2852,
-						2869
+						2894
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2862,
-						2865,
-						2859,
+						2887,
+						2890,
+						2873,
 						2853
 					]
 				}
@@ -749,7 +1334,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/artifactsManager.ts",
-					"line": 5,
+					"line": 6,
 					"character": 22
 				}
 			],
@@ -1368,7 +1953,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2901,
+						"id": 2922,
 						"name": "UserManager"
 					}
 				},
@@ -6737,8 +7322,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -6784,8 +7369,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -6837,8 +7422,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -6884,8 +7469,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -6938,8 +7523,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -6985,8 +7570,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -7032,8 +7617,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -7086,8 +7671,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -7133,8 +7718,8 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 142,
-										"name": "ClientUser"
+										"id": 2697,
+										"name": "User"
 									}
 								],
 								"name": "Promise"
@@ -7944,28 +8529,28 @@
 			]
 		},
 		{
-			"id": 2870,
+			"id": 2895,
 			"name": "ForkManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2871,
+					"id": 2896,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2872,
+							"id": 2897,
 							"name": "new ForkManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2873,
+									"id": 2898,
 									"name": "client",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7977,7 +8562,7 @@
 									}
 								},
 								{
-									"id": 2874,
+									"id": 2899,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7985,14 +8570,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2875,
+											"id": 2900,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2876,
+													"id": 2901,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -8017,7 +8602,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2876
+														2901
 													]
 												}
 											]
@@ -8027,7 +8612,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2870,
+								"id": 2895,
 								"name": "ForkManager"
 							},
 							"overwrites": {
@@ -8044,7 +8629,7 @@
 					}
 				},
 				{
-					"id": 2877,
+					"id": 2902,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8068,7 +8653,7 @@
 					}
 				},
 				{
-					"id": 2878,
+					"id": 2903,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8098,15 +8683,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2871
+						2896
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2877,
-						2878
+						2902,
+						2903
 					]
 				}
 			],
@@ -17832,7 +18417,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2870,
+						"id": 2895,
 						"name": "ForkManager"
 					}
 				},
@@ -18062,28 +18647,28 @@
 			]
 		},
 		{
-			"id": 2879,
+			"id": 2904,
 			"name": "IssueManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2880,
+					"id": 2905,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2881,
+							"id": 2906,
 							"name": "new IssueManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2882,
+									"id": 2907,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -18091,14 +18676,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2883,
+											"id": 2908,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2884,
+													"id": 2909,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -18117,7 +18702,7 @@
 													}
 												},
 												{
-													"id": 2885,
+													"id": 2910,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -18140,8 +18725,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2884,
-														2885
+														2909,
+														2910
 													]
 												}
 											]
@@ -18151,7 +18736,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2879,
+								"id": 2904,
 								"name": "IssueManager"
 							},
 							"overwrites": {
@@ -18168,7 +18753,7 @@
 					}
 				},
 				{
-					"id": 2890,
+					"id": 2911,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -18192,7 +18777,7 @@
 					}
 				},
 				{
-					"id": 2891,
+					"id": 2912,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -18215,72 +18800,6 @@
 						"id": 2840,
 						"name": "Manager.url"
 					}
-				},
-				{
-					"id": 2886,
-					"name": "fetch",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/managers/issuemanager.ts",
-							"line": 15,
-							"character": 13
-						}
-					],
-					"signatures": [
-						{
-							"id": 2887,
-							"name": "fetch",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "fetch the issue using it's number"
-							},
-							"parameters": [
-								{
-									"id": 2888,
-									"name": "id",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "issue number"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								},
-								{
-									"id": 2889,
-									"name": "options",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
-									"type": {
-										"type": "reference",
-										"name": "FetchOptions"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "void"
-									}
-								],
-								"name": "Promise"
-							}
-						}
-					]
 				}
 			],
 			"groups": [
@@ -18288,22 +18807,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2880
+						2905
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2890,
-						2891
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						2886
+						2911,
+						2912
 					]
 				}
 			],
@@ -18492,22 +19004,22 @@
 				},
 				{
 					"type": "reference",
-					"id": 2870,
+					"id": 2895,
 					"name": "ForkManager"
 				},
 				{
 					"type": "reference",
-					"id": 2879,
+					"id": 2904,
 					"name": "IssueManager"
 				},
 				{
 					"type": "reference",
-					"id": 2892,
+					"id": 2913,
 					"name": "RepoManager"
 				},
 				{
 					"type": "reference",
-					"id": 2901,
+					"id": 2922,
 					"name": "UserManager"
 				}
 			]
@@ -59086,7 +59598,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 2870,
+						"id": 2895,
 						"name": "ForkManager"
 					}
 				},
@@ -59967,28 +60479,28 @@
 			]
 		},
 		{
-			"id": 2892,
+			"id": 2913,
 			"name": "RepoManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2893,
+					"id": 2914,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2894,
+							"id": 2915,
 							"name": "new RepoManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2895,
+									"id": 2916,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -59996,14 +60508,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2896,
+											"id": 2917,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2897,
+													"id": 2918,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -60022,7 +60534,7 @@
 													}
 												},
 												{
-													"id": 2898,
+													"id": 2919,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -60045,8 +60557,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2897,
-														2898
+														2918,
+														2919
 													]
 												}
 											]
@@ -60056,7 +60568,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2892,
+								"id": 2913,
 								"name": "RepoManager"
 							},
 							"overwrites": {
@@ -60073,7 +60585,7 @@
 					}
 				},
 				{
-					"id": 2899,
+					"id": 2920,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -60097,7 +60609,7 @@
 					}
 				},
 				{
-					"id": 2900,
+					"id": 2921,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -60127,15 +60639,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2893
+						2914
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2899,
-						2900
+						2920,
+						2921
 					]
 				}
 			],
@@ -63143,28 +63655,28 @@
 			]
 		},
 		{
-			"id": 2901,
+			"id": 2922,
 			"name": "UserManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2902,
+					"id": 2923,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2903,
+							"id": 2924,
 							"name": "new UserManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2904,
+									"id": 2925,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -63172,14 +63684,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2905,
+											"id": 2926,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2906,
+													"id": 2927,
 													"name": "client",
 													"kind": 1024,
 													"kindString": "Property",
@@ -63187,7 +63699,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/usermanager.ts",
-															"line": 8,
+															"line": 9,
 															"character": 39
 														}
 													],
@@ -63198,7 +63710,7 @@
 													}
 												},
 												{
-													"id": 2907,
+													"id": 2928,
 													"name": "url",
 													"kind": 1024,
 													"kindString": "Property",
@@ -63208,7 +63720,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/usermanager.ts",
-															"line": 8,
+															"line": 9,
 															"character": 52
 														}
 													],
@@ -63223,8 +63735,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2906,
-														2907
+														2927,
+														2928
 													]
 												}
 											]
@@ -63234,7 +63746,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2901,
+								"id": 2922,
 								"name": "UserManager"
 							},
 							"overwrites": {
@@ -63251,7 +63763,7 @@
 					}
 				},
 				{
-					"id": 2918,
+					"id": 2933,
 					"name": "client",
 					"kind": 1024,
 					"kindString": "Property",
@@ -63275,7 +63787,7 @@
 					}
 				},
 				{
-					"id": 2919,
+					"id": 2934,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -63300,7 +63812,7 @@
 					}
 				},
 				{
-					"id": 2908,
+					"id": 2929,
 					"name": "fetch",
 					"kind": 2048,
 					"kindString": "Method",
@@ -63310,20 +63822,20 @@
 					"sources": [
 						{
 							"fileName": "src/managers/usermanager.ts",
-							"line": 12,
+							"line": 13,
 							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2909,
+							"id": 2930,
 							"name": "fetch",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2910,
+									"id": 2931,
 									"name": "username",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -63334,7 +63846,7 @@
 									}
 								},
 								{
-									"id": 2911,
+									"id": 2932,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -63359,121 +63871,6 @@
 							}
 						}
 					]
-				},
-				{
-					"id": 2912,
-					"name": "list",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/managers/usermanager.ts",
-							"line": 22,
-							"character": 20
-						}
-					],
-					"signatures": [
-						{
-							"id": 2913,
-							"name": "list",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 2914,
-									"name": "__namedParameters",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2915,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2917,
-													"name": "perPage",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {
-														"isOptional": true
-													},
-													"sources": [
-														{
-															"fileName": "src/managers/usermanager.ts",
-															"line": 25,
-															"character": 30
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2916,
-													"name": "since",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {
-														"isOptional": true
-													},
-													"sources": [
-														{
-															"fileName": "src/managers/usermanager.ts",
-															"line": 25,
-															"character": 12
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "string"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2917,
-														2916
-													]
-												}
-											]
-										}
-									},
-									"defaultValue": "{}"
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "unknown"
-									},
-									{
-										"type": "intrinsic",
-										"name": "any"
-									},
-									{
-										"type": "intrinsic",
-										"name": "unknown"
-									}
-								],
-								"name": "AsyncGenerator"
-							}
-						}
-					]
 				}
 			],
 			"groups": [
@@ -63481,30 +63878,29 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2902
+						2923
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2918,
-						2919
+						2933,
+						2934
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2908,
-						2912
+						2929
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/managers/usermanager.ts",
-					"line": 7,
+					"line": 8,
 					"character": 17
 				}
 			],
@@ -63530,15 +63926,15 @@
 				142,
 				323,
 				348,
-				2870,
+				2895,
 				363,
 				813,
-				2879,
+				2904,
 				2832,
 				819,
-				2892,
+				2913,
 				2697,
-				2901
+				2922
 			]
 		}
 	],
