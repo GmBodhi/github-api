@@ -1,5 +1,6 @@
 import { Response } from "node-fetch";
 import Client from "../structures/client";
+import { ArtifactData, ArtifactListData } from "../utils";
 import Manager from "./manager";
 
 class ArtifactsManager extends Manager {
@@ -13,7 +14,10 @@ class ArtifactsManager extends Manager {
     this.owner = owner;
     this.repo = repo;
   }
-  async list(options: { page?: number; perPage?: number }) {
+  async list(options: {
+    page?: number;
+    perPage?: number;
+  }): Promise<ArtifactListData> {
     return await this.client.api
       .req(`/repos/${this.owner}/${this.repo}/actions/artifacts`, {
         query: options,
@@ -22,11 +26,11 @@ class ArtifactsManager extends Manager {
       .then((res: Response) => {
         return res.json();
       })
-      .catch((e: any) => {
-        throw new Error(e);
+      .catch((e: Error) => {
+        throw e;
       });
   }
-  async get(artifactId: number) {
+  async get(artifactId: number): Promise<ArtifactData> {
     return await this.client.api
       .req(`/repos/${this.owner}/${this.repo}/actions/artifacts/${artifactId}`)
       .get()
@@ -34,7 +38,9 @@ class ArtifactsManager extends Manager {
         return res.json();
       });
   }
-  async delete(artifactId: number) {
+
+  // For the time being we will leave as it is... Unless confirm with tests
+  async delete(artifactId: number): Promise<unknown> {
     return await this.client.api
       .req(`/repos/${this.owner}/${this.repo}/actions/artifacts/${artifactId}`)
       .delete()
@@ -42,7 +48,7 @@ class ArtifactsManager extends Manager {
         return res.json();
       });
   }
-  async download(artifactId: number) {
+  async download(artifactId: number): Promise<unknown> {
     return await this.client.api
       .req(
         `/repos/${this.owner}/${this.repo}/actions/artifacts/${artifactId}/zip`
