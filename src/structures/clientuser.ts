@@ -41,7 +41,7 @@ class ClientUser extends User {
    * @param {String} email - Email you want to set
    * @returns - Returns updated user
    */
-  async setEmail(email: string) {
+  async setEmail(email: string): Promise<User> {
     return await this.setAll({ email });
   }
 
@@ -50,7 +50,7 @@ class ClientUser extends User {
    * @param {String} name - name that you want to set
    * @returns - Returns updated user.
    */
-  async setName(name: string) {
+  async setName(name: string): Promise<User> {
     return await this.setAll({ name });
   }
 
@@ -59,27 +59,27 @@ class ClientUser extends User {
    * @param blog - A string that you want to set as Blog
    * @returns {User} - returns the updated user
    */
-  async setBlog(blog: string) {
+  async setBlog(blog: string): Promise<User> {
     return await this.setAll({ blog });
   }
 
-  async setTwitterUsername(twitterUsername: string) {
+  async setTwitterUsername(twitterUsername: string): Promise<User> {
     return await this.setAll({ twitterUsername });
   }
 
-  async setCompany(company: string) {
+  async setCompany(company: string): Promise<User> {
     return await this.setAll({ company });
   }
 
-  async setLocation(location: string) {
+  async setLocation(location: string): Promise<User> {
     return await this.setAll({ location });
   }
 
-  async setHireable(hireable: boolean) {
+  async setHireable(hireable: boolean): Promise<User> {
     return await this.setAll({ hireable });
   }
 
-  async setBio(bio: string) {
+  async setBio(bio: string): Promise<User> {
     return await this.setAll({ bio });
   }
 
@@ -92,7 +92,7 @@ class ClientUser extends User {
     location?: string;
     hireable?: boolean;
     bio?: string;
-  }) {
+  }): Promise<User> {
     return await this.client.api
       .req("user", { body: options })
       .patch()

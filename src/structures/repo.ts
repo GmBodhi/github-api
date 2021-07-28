@@ -98,9 +98,9 @@ class Repo extends Base {
     return this.data.created_at;
   }
 
-  // public get() {
-  //   return this.data
-  // }
+  public get defaultBranch(): RepoData["default_branch"] {
+    return this.data.default_branch;
+  }
 }
 
 export default Repo;

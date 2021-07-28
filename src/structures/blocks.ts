@@ -21,8 +21,8 @@ class Blocks extends Base {
         );
         return body;
       })
-      .catch((e: any) => {
-        throw new Error(e);
+      .catch((e: Error) => {
+        throw e;
       });
   }
 
@@ -35,8 +35,8 @@ class Blocks extends Base {
           return res.status === 204 ? true : false;
         throw new GHError(res, await res.json());
       })
-      .catch((e: any) => {
-        throw new Error(e);
+      .catch((e: Error) => {
+        throw e;
       });
   }
 
@@ -45,8 +45,8 @@ class Blocks extends Base {
       .req(`user/blocks/${username}`, { _: true })
       .put()
       .then((res: Response) => res.json())
-      .catch((e: any) => {
-        throw new Error(e);
+      .catch((e: Error) => {
+        throw e;
       });
     return res.ok ? true : false;
   }
@@ -56,8 +56,8 @@ class Blocks extends Base {
       .req(`user/blocks/${username}`, { _: true })
       .delete()
       .then((res: Response) => res.json())
-      .catch((e: any) => {
-        throw new Error(e);
+      .catch((e: Error) => {
+        throw e;
       });
     return res.ok ? true : false;
   }
