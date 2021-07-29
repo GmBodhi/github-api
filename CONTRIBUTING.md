@@ -25,7 +25,12 @@ We're currently interested in covering all the available endpoints.
 #### IDE 
   We recommend using the ESLint and Prettier extensions with VSCode (or alternative editor of your preference) \
   In case if your system is unresponsive (disable ESLint)
+  
+#### Commiting
+  We encourage you to follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
    
 ## Making PR 
   You'll have to pass [Lint](https://github.com/GmBodhi/github-api/actions/workflows/lint.yml) \
   Run `yarn lint` after making changes to know whether it'll break or not
+
+Chears..!
