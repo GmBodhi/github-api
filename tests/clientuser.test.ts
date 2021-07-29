@@ -11,10 +11,10 @@ export default function (client: Client, getRandom: any) {
         client.user?.setName(getRandom()).then(() => done());
       });
       it("change user's bio to a random value", (done) => {
-        client.user?.setBio(getRandom()).then(() => done());
-        client.user?.setBio(
-          "This is a test account for testing GmBodhi/github-api"
-        );
+        client.user?.setBio(getRandom());
+        client.user
+          ?.setBio("This is a test account for testing GmBodhi/github-api")
+          .then(() => done());
       });
       it("change user's location to a random value", (done) => {
         client.user?.setLocation(getRandom()).then(() => done());
@@ -23,8 +23,10 @@ export default function (client: Client, getRandom: any) {
         client.user?.setTwitterUsername(getRandom()).then(() => done());
       });
       it("change user's blog url", (done) => {
-        client.user?.setBlog("http://eximstudio.com").then(() => done());
-        client.user?.setBlog("http://github.com/GmBodhi/github-api");
+        client.user?.setBlog("http://eximstudio.com");
+        client.user
+          ?.setBlog("http://github.com/GmBodhi/github-api")
+          .then(() => done());
       });
     });
   });
