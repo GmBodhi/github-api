@@ -4,6 +4,9 @@ Thank you for considering contributing to this repository!
 
 Please note that by participating, you are expected to uphold the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md).
 
+We're currently interested in covering all the available endpoints.
+
+
 ## Setting up local environment
 
 #### fork the repo
@@ -26,7 +29,3 @@ Please note that by participating, you are expected to uphold the [Contributor C
 ## Making PR 
   You'll have to pass [Lint](https://github.com/GmBodhi/github-api/actions/workflows/lint.yml) \
   Run `yarn lint` after making changes to know whether it'll break or not
-  
-# Guidelines
-
-- We're looking forward in, covering all the available endpoints...
