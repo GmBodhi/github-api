@@ -1,4 +1,4 @@
-import { UserData } from "../utils/rawdata";
+import { ClientUserData, UserData } from "../utils/rawdata";
 import Client from "./client";
 
 /**
@@ -75,6 +75,25 @@ class User {
     this.following = data.following;
     this.createdAt = data.created_at;
     this.updatedAt = data.updated_at;
+  }
+
+  public _patch(
+    data: UserData | ClientUserData | Record<string, unknown>
+  ): this {
+    const processedData: unknown = Object.fromEntries(
+      // I'm not destructuring `val` cuz to prevent ESLint errors and assignment unexpected behaviour...
+      (Object.entries(data) as [string, unknown][]).filter((val) => {
+        val[0] = val[0].replace(
+          /_(\w)/gi,
+          (_: unknown, param: string): string => param.toUpperCase()
+        );
+        return val[1] !== undefined || val[1] !== null;
+      })
+    );
+
+    Object.assign(this, processedData);
+
+    return this;
   }
 }
 
