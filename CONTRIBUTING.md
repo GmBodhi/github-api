@@ -26,7 +26,7 @@ We're currently interested in covering all the available endpoints.
   We recommend using the ESLint and Prettier extensions with VSCode (or alternative editor of your preference) \
   In case if your system is unresponsive (disable ESLint)
   
-#### Commiting
+#### Committing
   We encourage you to follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
    
 ## Making PR 
