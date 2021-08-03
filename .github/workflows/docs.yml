@@ -1,6 +1,10 @@
 name: Docs
 
-on: push
+on:
+  push:
+    branches: [dev]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   Docs:
