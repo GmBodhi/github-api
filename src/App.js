@@ -1,14 +1,22 @@
 import React from "react";
-import LeftSide from "./components/leftside";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Docs from "./components/Docs";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <center>
-        <h1>GitHubX</h1>
-      </center>
-      <LeftSide version="1.0.0" />
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/docs">
+            <Docs />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

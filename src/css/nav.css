@@ -1,0 +1,10 @@
+nav {
+  display: block;
+  width: 100%;
+  height: calc(30% - 10px);
+  background-color: aqua;
+}
+
+nav .nav-link {
+  margin-left: 10px;
+}

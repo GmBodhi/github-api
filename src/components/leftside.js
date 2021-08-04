@@ -1,30 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useState } from "react";
 
-let i = false;
-const fetchDocs = (setJson, version) => {
-  if (i) return;
-  i = true;
+const fetchDocs = (setJson, { version, branch }) => {
   fetch(
-    `https://cdn.statically.io/gh/gmbodhi/github-api/dev/docs/${version}.json`
+    `https://cdn.statically.io/gh/gmbodhi/github-api/${branch}/docs/${version}.json`
   )
     .then((res) => res.json())
     .then((r) => setJson(r));
 };
 
-let tm = Date.now();
-
-export default function LeftSide({ version }) {
+export default function LeftSide({ version, branch }) {
   const [json, setJson] = useState({ children: [] });
-  fetchDocs(setJson, version);
+  useEffect(() => {
+    fetchDocs(setJson, {
+      version,
+      branch,
+    });
+  }, [version, branch]);
 
   return (
     <div className="left-side">
-      {json.children.map((b) => {
+      {json.children.map((title) => {
         return (
-          <li key={b.id}>
-            <a>{b.name}</a>
+          <li key={title.id}>
+            <a>{title.name}</a>
           </li>
         );
       })}
