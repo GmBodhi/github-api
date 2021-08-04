@@ -1,1 +1,1 @@
-{ "entryPoints": ["./src/index.ts"], "json": "docs/1.0.0.json" }
+{"entryPoints":["./src/index.ts"],"json":"docs/1.0.0.json"}
