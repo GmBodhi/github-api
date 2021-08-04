@@ -1,6 +1,6 @@
-import LeftSide from "./LeftSide";
+import LeftSide from "./leftside";
 import React from "react";
-import Nav from "./nav";
+import Nav from "./Nav";
 
 export default function Docs(props) {
   return (
