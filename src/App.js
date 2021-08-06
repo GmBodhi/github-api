@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,8 +10,10 @@ import Home from "./components/Home";
 import "./css/global.css";
 
 function App() {
-  let target = window.location.search.split("=")[1];
-  console.log(target, "target");
+  const target = window.location.search.split("=")[1];
+  // useEffect(() => {
+  //   document.title = Math.random();
+  // }, [window.location]);
   return (
     <Router>
       <div>
