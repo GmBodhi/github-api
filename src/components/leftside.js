@@ -29,7 +29,7 @@ export default function LeftSide({ version, branch }) {
               <NavLink
                 className="left-link"
                 to={`/docs/${title.name}`}
-                activeStyle={{ color: "#111" }}
+                activeClassName="active"
               >
                 {title.name}
               </NavLink>

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import "../css/nav.css";
 
-export default function Nav(props) {
+export default function Nav() {
   const history = useHistory();
   return (
     <nav>
@@ -26,6 +26,8 @@ export default function Nav(props) {
             Docs
           </NavLink>
         </li>
+      </ul>
+      <ul className="right">
         <li>
           <a
             href="https://github.com/GmBodhi/github-api"
@@ -33,6 +35,15 @@ export default function Nav(props) {
             className="nav-link external"
           >
             GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://discord.gg/PVjQxyF3Jv"
+            target="_blank"
+            className="nav-link external"
+          >
+            Discord
           </a>
         </li>
       </ul>

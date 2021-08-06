@@ -10,3 +10,14 @@
 .left-side ul li {
   margin-top: 10px;
 }
+
+.left-side ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.left-side ul li a.active {
+  /* color: aliceblue; */
+  text-decoration: underline;
+  font-weight: 600;
+}

@@ -1,6 +1,6 @@
 nav {
-  background-color: #111;
-  height: calc(11vh - 10px);
+  background-color: #6b35ff77;
+  height: calc(10vh - 10px);
   margin: 0;
   position: relative;
 }
@@ -8,7 +8,7 @@ nav {
 nav ul {
   position: absolute;
   list-style-type: none;
-  margin-top: calc(5vh - 10px);
+  margin-top: calc(5vh - 15px);
 }
 
 nav ul li {
@@ -20,9 +20,37 @@ nav .nav-link {
   text-decoration: none;
   padding: 10px 20px;
   text-align: center;
-  border: 2px solid #fff;
+  border: 2px solid #6a35ff;
+  background-color: #fff7f2;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+nav .nav-link:hover {
+  color: #6a35ff;
+  transform: scale(20);
 }
 
 nav .nav-link.active {
-  color: aqua;
+  color: #111;
+  font-weight: 600;
+}
+
+nav .right {
+  position: absolute;
+  top: auto;
+  left: calc(100vw - 215px);
+}
+
+@media screen and (max-width: 767px) {
+  nav .nav-link {
+    padding: 8px 15px;
+  }
+  nav .right {
+    left: calc(100vw - 210px);
+  }
+
+  nav ul {
+    margin-left: 8px;
+  }
 }
