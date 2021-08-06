@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../css/leftside.css";
 
 const fetchDocs = (setJson, { version, branch }) => {
   fetch(
@@ -21,13 +22,21 @@ export default function LeftSide({ version, branch }) {
 
   return (
     <div className="left-side">
-      {json.children.map((title) => {
-        return (
-          <li key={title.id}>
-            <a>{title.name}</a>
-          </li>
-        );
-      })}
+      <ul>
+        {json.children.map((title) => {
+          return (
+            <li key={title.id} className="left-list">
+              <NavLink
+                className="left-link"
+                to={`/docs/${title.name}`}
+                activeStyle={{ color: "#111" }}
+              >
+                {title.name}
+              </NavLink>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

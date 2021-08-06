@@ -1,10 +1,28 @@
 nav {
-  display: block;
-  width: 100%;
-  height: calc(30% - 10px);
-  background-color: aqua;
+  background-color: #111;
+  height: calc(11vh - 10px);
+  margin: 0;
+  position: relative;
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none;
+  margin-top: calc(5vh - 10px);
+}
+
+nav ul li {
+  display: inline;
 }
 
 nav .nav-link {
   margin-left: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+nav .nav-link.active {
+  color: aqua;
 }

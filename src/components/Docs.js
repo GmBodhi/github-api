@@ -1,8 +1,19 @@
 import LeftSide from "./leftside";
 import React from "react";
 import Nav from "./Nav";
-
-export default function Docs(props) {
+import { useParams } from "react-router-dom";
+export default function Docs() {
+  let { docs } = useParams();
+  if (docs) {
+    console.log(docs);
+    return (
+      <>
+        <Nav />
+        <LeftSide version="1.0.0" branch="dev" />
+        {docs}
+      </>
+    );
+  }
   return (
     <>
       <Nav />

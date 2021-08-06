@@ -16,6 +16,9 @@ function App() {
     <Router>
       <div>
         <Switch>
+          <Route path="/docs/:docs">
+            <Docs />
+          </Route>
           <Route path="/docs">
             <Docs />
           </Route>

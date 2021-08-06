@@ -1,0 +1,12 @@
+.left-side {
+  width: 180px;
+  margin-top: 20px;
+}
+
+.left-side ul {
+  margin-left: 10px;
+}
+
+.left-side ul li {
+  margin-top: 10px;
+}
