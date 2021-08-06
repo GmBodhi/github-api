@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import "../css/nav.css";
 
 export default function Nav(props) {
+  const history = useHistory();
   return (
     <nav>
       <ul>
@@ -12,6 +13,10 @@ export default function Nav(props) {
             exact
             activeClassName="active"
             className="nav-link"
+            onClick={(e) => {
+              e.preventDefault();
+              history.push("/");
+            }}
           >
             Home
           </NavLink>

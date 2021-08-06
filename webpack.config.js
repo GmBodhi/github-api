@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js",
-  // publicPath: "/",
   stats: {
     exclude: /node_modules/,
   },
@@ -19,6 +18,7 @@ module.exports = {
   },
   mode: "development",
   devServer: {
+    publicPath: "/",
     historyApiFallback: true,
   },
   plugins: [

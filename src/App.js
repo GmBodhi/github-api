@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
   Redirect,
-  useLocation,
 } from "react-router-dom";
 import Docs from "./components/Docs";
 import Home from "./components/Home";
@@ -12,6 +11,7 @@ import "./css/global.css";
 
 function App() {
   let target = window.location.search.split("=")[1];
+  console.log(target, "target");
   return (
     <Router>
       <div>
