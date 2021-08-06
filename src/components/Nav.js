@@ -7,7 +7,12 @@ export default function Nav(props) {
     <nav>
       <ul>
         <li>
-          <NavLink to="/" exact activeClassName="active" className="nav-link">
+          <NavLink
+            to="../../"
+            exact
+            activeClassName="active"
+            className="nav-link"
+          >
             Home
           </NavLink>
         </li>
