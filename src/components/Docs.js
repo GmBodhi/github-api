@@ -1,9 +1,9 @@
-import LeftSide from "./leftside";
-import React from "react";
-import Nav from "./Nav";
-import { useParams } from "react-router-dom";
+import LeftSide from './leftside';
+import React from 'react';
+import Nav from './Nav';
+import {useParams} from 'react-router-dom';
 export default function Docs() {
-  let { docs } = useParams();
+  const {docs} = useParams();
   if (docs) {
     console.log(docs);
     return (

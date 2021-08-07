@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink, useHistory } from "react-router-dom";
-import "../css/nav.css";
+import React from 'react';
+import {NavLink, useHistory} from 'react-router-dom';
+import '../css/nav.css';
 
 export default function Nav() {
   const history = useHistory();
@@ -15,7 +15,7 @@ export default function Nav() {
             className="nav-link"
             onClick={(e) => {
               e.preventDefault();
-              history.push("/");
+              history.push('/');
             }}
           >
             Home
@@ -32,7 +32,7 @@ export default function Nav() {
           <a
             href="https://github.com/GmBodhi/github-api"
             target="_blank"
-            className="nav-link external"
+            className="nav-link external" rel="noreferrer"
           >
             GitHub
           </a>
@@ -41,7 +41,7 @@ export default function Nav() {
           <a
             href="https://discord.gg/PVjQxyF3Jv"
             target="_blank"
-            className="nav-link external"
+            className="nav-link external" rel="noreferrer"
           >
             Discord
           </a>
