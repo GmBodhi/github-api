@@ -12,9 +12,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 110,
@@ -29,9 +26,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Actions."
-							},
 							"parameters": [
 								{
 									"id": 112,
@@ -39,7 +33,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -70,8 +63,8 @@
 													"sources": [
 														{
 															"fileName": "src/structures/actions.ts",
-															"line": 40,
-															"character": 28
+															"line": 9,
+															"character": 53
 														}
 													],
 													"type": {
@@ -88,8 +81,8 @@
 													"sources": [
 														{
 															"fileName": "src/structures/actions.ts",
-															"line": 40,
-															"character": 42
+															"line": 9,
+															"character": 67
 														}
 													],
 													"type": {
@@ -136,14 +129,11 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/actions.ts",
-							"line": 18,
-							"character": 11
+							"line": 6,
+							"character": 13
 						}
 					],
 					"type": {
@@ -158,13 +148,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -185,14 +172,11 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/actions.ts",
-							"line": 24,
-							"character": 7
+							"line": 7,
+							"character": 9
 						}
 					],
 					"type": {
@@ -206,14 +190,11 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/actions.ts",
-							"line": 30,
-							"character": 6
+							"line": 8,
+							"character": 8
 						}
 					],
 					"type": {
@@ -244,7 +225,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/actions.ts",
-					"line": 12,
+					"line": 5,
 					"character": 13
 				}
 			],
@@ -262,9 +243,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3040,
@@ -279,9 +257,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of ArtifactsManager."
-							},
 							"parameters": [
 								{
 									"id": 3042,
@@ -307,7 +282,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 34,
+															"line": 10,
 															"character": 24
 														}
 													],
@@ -354,7 +329,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 35,
+															"line": 11,
 															"character": 28
 														}
 													],
@@ -372,7 +347,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 35,
+															"line": 11,
 															"character": 42
 														}
 													],
@@ -420,13 +395,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -447,13 +419,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 19,
+							"line": 7,
 							"character": 7
 						}
 					],
@@ -468,13 +437,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 25,
+							"line": 8,
 							"character": 6
 						}
 					],
@@ -491,13 +457,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -520,7 +483,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 91,
+							"line": 43,
 							"character": 14
 						}
 					],
@@ -531,16 +494,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 3087,
@@ -548,7 +501,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "number"
@@ -577,7 +529,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 106,
+							"line": 51,
 							"character": 16
 						}
 					],
@@ -588,16 +540,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 3090,
@@ -605,7 +547,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "number"
@@ -634,7 +575,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 74,
+							"line": 33,
 							"character": 11
 						}
 					],
@@ -645,16 +586,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 3073,
@@ -662,7 +593,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "number"
@@ -953,7 +883,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/artifactsManager.ts",
-							"line": 51,
+							"line": 17,
 							"character": 12
 						}
 					],
@@ -964,16 +894,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 3053,
@@ -1001,7 +921,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 52,
+															"line": 18,
 															"character": 8
 														}
 													],
@@ -1021,7 +941,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/artifactsManager.ts",
-															"line": 53,
+															"line": 19,
 															"character": 11
 														}
 													],
@@ -1414,7 +1334,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/artifactsManager.ts",
-					"line": 13,
+					"line": 6,
 					"character": 22
 				}
 			],
@@ -1432,9 +1352,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 122,
@@ -1449,9 +1366,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Base."
-							},
 							"parameters": [
 								{
 									"id": 124,
@@ -1459,9 +1373,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -1483,13 +1394,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -1519,7 +1427,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/base.ts",
-					"line": 9,
+					"line": 3,
 					"character": 10
 				}
 			],
@@ -1557,9 +1465,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 127,
@@ -1574,9 +1479,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Blocks."
-							},
 							"parameters": [
 								{
 									"id": 129,
@@ -1584,9 +1486,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -1618,13 +1517,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -1648,7 +1544,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/blocks.ts",
-							"line": 94,
+							"line": 54,
 							"character": 13
 						}
 					],
@@ -1659,16 +1555,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 140,
@@ -1676,7 +1562,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -1705,7 +1590,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/blocks.ts",
-							"line": 55,
+							"line": 29,
 							"character": 11
 						}
 					],
@@ -1716,16 +1601,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 134,
@@ -1733,7 +1608,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -1762,7 +1636,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/blocks.ts",
-							"line": 32,
+							"line": 13,
 							"character": 12
 						}
 					],
@@ -1773,16 +1647,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"type": {
 								"type": "reference",
 								"typeArguments": [
@@ -1809,7 +1673,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/blocks.ts",
-							"line": 76,
+							"line": 43,
 							"character": 15
 						}
 					],
@@ -1820,16 +1684,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 137,
@@ -1837,7 +1691,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -1887,7 +1740,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/blocks.ts",
-					"line": 15,
+					"line": 8,
 					"character": 12
 				}
 			],
@@ -1905,9 +1758,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 28,
@@ -1922,9 +1772,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Client."
-							},
 							"parameters": [
 								{
 									"id": 30,
@@ -1964,19 +1811,10 @@
 						"isPublic": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 81,
+							"line": 18,
 							"character": 21
 						}
 					],
@@ -1995,19 +1833,10 @@
 						"isOptional": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 51,
+							"line": 14,
 							"character": 23
 						}
 					],
@@ -2033,13 +1862,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 58,
+							"line": 15,
 							"character": 14
 						}
 					],
@@ -2058,19 +1884,10 @@
 						"isOptional": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 43,
+							"line": 13,
 							"character": 23
 						}
 					],
@@ -2096,13 +1913,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 65,
+							"line": 16,
 							"character": 13
 						}
 					],
@@ -2130,19 +1944,10 @@
 						"isPublic": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/client.ts",
-							"line": 73,
+							"line": 17,
 							"character": 23
 						}
 					],
@@ -3969,7 +3774,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/client.ts",
-					"line": 35,
+					"line": 12,
 					"character": 12
 				}
 			],
@@ -3986,9 +3791,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 143,
@@ -4003,9 +3805,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of ClientUser."
-							},
 							"parameters": [
 								{
 									"id": 145,
@@ -4013,7 +3812,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "union",
 										"types": [
@@ -6178,7 +5976,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 81,
+															"line": 22,
 															"character": 56
 														}
 													],
@@ -6226,13 +6024,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 37,
+							"line": 17,
 							"character": 11
 						}
 					],
@@ -6254,13 +6049,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 157,
+							"line": 37,
 							"character": 5
 						}
 					],
@@ -6280,13 +6072,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 51,
+							"line": 14,
 							"character": 8
 						}
 					],
@@ -6304,13 +6093,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 133,
+							"line": 33,
 							"character": 6
 						}
 					],
@@ -6370,13 +6156,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 45,
+							"line": 13,
 							"character": 15
 						}
 					],
@@ -6393,13 +6176,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 127,
+							"line": 32,
 							"character": 9
 						}
 					],
@@ -6421,13 +6201,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 193,
+							"line": 43,
 							"character": 11
 						}
 					],
@@ -6449,13 +6226,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 39,
+							"line": 12,
 							"character": 11
 						}
 					],
@@ -6472,13 +6246,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 145,
+							"line": 35,
 							"character": 7
 						}
 					],
@@ -6507,13 +6278,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 57,
+							"line": 15,
 							"character": 8
 						}
 					],
@@ -6531,13 +6299,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 103,
+							"line": 28,
 							"character": 11
 						}
 					],
@@ -6559,13 +6324,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 181,
+							"line": 41,
 							"character": 11
 						}
 					],
@@ -6587,13 +6349,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 67,
+							"line": 22,
 							"character": 14
 						}
 					],
@@ -6615,13 +6374,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 187,
+							"line": 42,
 							"character": 11
 						}
 					],
@@ -6643,13 +6399,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 61,
+							"line": 21,
 							"character": 14
 						}
 					],
@@ -6671,13 +6424,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 73,
+							"line": 23,
 							"character": 10
 						}
 					],
@@ -6697,13 +6447,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 43,
+							"line": 18,
 							"character": 12
 						}
 					],
@@ -6725,13 +6472,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 151,
+							"line": 36,
 							"character": 10
 						}
 					],
@@ -6760,13 +6504,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 55,
+							"line": 20,
 							"character": 9
 						}
 					],
@@ -6786,13 +6527,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 25,
+							"line": 15,
 							"character": 4
 						}
 					],
@@ -6814,13 +6552,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 139,
+							"line": 34,
 							"character": 10
 						}
 					],
@@ -6840,13 +6575,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 19,
+							"line": 14,
 							"character": 7
 						}
 					],
@@ -6866,13 +6598,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 31,
+							"line": 16,
 							"character": 8
 						}
 					],
@@ -6894,13 +6623,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 91,
+							"line": 26,
 							"character": 18
 						}
 					],
@@ -6922,13 +6648,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 33,
+							"line": 11,
 							"character": 19
 						}
 					],
@@ -6943,13 +6666,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 68,
+							"line": 16,
 							"character": 6
 						}
 					],
@@ -6973,7 +6693,7 @@
 									"sources": [
 										{
 											"fileName": "src/structures/clientuser.ts",
-											"line": 72,
+											"line": 20,
 											"character": 17
 										}
 									],
@@ -6993,7 +6713,7 @@
 									"sources": [
 										{
 											"fileName": "src/structures/clientuser.ts",
-											"line": 69,
+											"line": 17,
 											"character": 8
 										}
 									],
@@ -7013,7 +6733,7 @@
 									"sources": [
 										{
 											"fileName": "src/structures/clientuser.ts",
-											"line": 71,
+											"line": 19,
 											"character": 16
 										}
 									],
@@ -7033,7 +6753,7 @@
 									"sources": [
 										{
 											"fileName": "src/structures/clientuser.ts",
-											"line": 70,
+											"line": 18,
 											"character": 9
 										}
 									],
@@ -7066,13 +6786,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 21,
+							"line": 9,
 							"character": 14
 						}
 					],
@@ -7089,13 +6806,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 175,
+							"line": 40,
 							"character": 13
 						}
 					],
@@ -7117,13 +6831,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 169,
+							"line": 39,
 							"character": 13
 						}
 					],
@@ -7145,13 +6856,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 109,
+							"line": 29,
 							"character": 19
 						}
 					],
@@ -7173,13 +6881,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 97,
+							"line": 27,
 							"character": 10
 						}
 					],
@@ -7201,13 +6906,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 121,
+							"line": 31,
 							"character": 11
 						}
 					],
@@ -7229,13 +6931,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 79,
+							"line": 24,
 							"character": 12
 						}
 					],
@@ -7257,13 +6956,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 85,
+							"line": 25,
 							"character": 18
 						}
 					],
@@ -7285,13 +6981,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 27,
+							"line": 10,
 							"character": 19
 						}
 					],
@@ -7308,13 +7001,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 163,
+							"line": 38,
 							"character": 17
 						}
 					],
@@ -7345,13 +7035,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 115,
+							"line": 30,
 							"character": 6
 						}
 					],
@@ -7373,13 +7060,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 199,
+							"line": 44,
 							"character": 11
 						}
 					],
@@ -7399,13 +7083,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 49,
+							"line": 19,
 							"character": 5
 						}
 					],
@@ -7430,7 +7111,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 249,
+							"line": 80,
 							"character": 15
 						}
 					],
@@ -7440,13 +7121,7 @@
 							"name": "_patch",
 							"kind": 4096,
 							"kindString": "Call signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n"
-							},
+							"flags": {},
 							"parameters": [
 								{
 									"id": 325,
@@ -7454,7 +7129,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "union",
 										"types": [
@@ -9670,7 +9344,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 196,
+							"line": 86,
 							"character": 14
 						}
 					],
@@ -9681,16 +9355,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 281,
@@ -9718,7 +9382,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 204,
+															"line": 94,
 															"character": 7
 														}
 													],
@@ -9738,7 +9402,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 199,
+															"line": 89,
 															"character": 8
 														}
 													],
@@ -9758,7 +9422,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 201,
+															"line": 91,
 															"character": 11
 														}
 													],
@@ -9778,7 +9442,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 197,
+															"line": 87,
 															"character": 9
 														}
 													],
@@ -9798,7 +9462,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 203,
+															"line": 93,
 															"character": 12
 														}
 													],
@@ -9818,7 +9482,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 202,
+															"line": 92,
 															"character": 12
 														}
 													],
@@ -9838,7 +9502,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 198,
+															"line": 88,
 															"character": 8
 														}
 													],
@@ -9858,7 +9522,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/clientuser.ts",
-															"line": 200,
+															"line": 90,
 															"character": 19
 														}
 													],
@@ -9911,7 +9575,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 176,
+							"line": 82,
 							"character": 14
 						}
 					],
@@ -9922,16 +9586,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 278,
@@ -9939,7 +9593,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -9969,7 +9622,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 121,
+							"line": 62,
 							"character": 15
 						}
 					],
@@ -10022,7 +9675,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 143,
+							"line": 70,
 							"character": 18
 						}
 					],
@@ -10033,16 +9686,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 269,
@@ -10050,7 +9693,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -10080,7 +9722,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 103,
+							"line": 44,
 							"character": 16
 						}
 					],
@@ -10134,7 +9776,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 165,
+							"line": 78,
 							"character": 19
 						}
 					],
@@ -10145,16 +9787,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 275,
@@ -10162,7 +9794,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "boolean"
@@ -10192,7 +9823,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 154,
+							"line": 74,
 							"character": 19
 						}
 					],
@@ -10203,16 +9834,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 272,
@@ -10220,7 +9841,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -10250,7 +9870,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 112,
+							"line": 53,
 							"character": 15
 						}
 					],
@@ -10304,7 +9924,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/clientuser.ts",
-							"line": 132,
+							"line": 66,
 							"character": 26
 						}
 					],
@@ -10315,16 +9935,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 266,
@@ -10332,7 +9942,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -10428,7 +10037,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/clientuser.ts",
-					"line": 15,
+					"line": 8,
 					"character": 16
 				}
 			],
@@ -10446,9 +10055,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 423,
@@ -10463,9 +10069,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Emails."
-							},
 							"parameters": [
 								{
 									"id": 425,
@@ -10473,9 +10076,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -10507,13 +10107,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -10537,7 +10134,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/emails.ts",
-							"line": 71,
+							"line": 36,
 							"character": 11
 						}
 					],
@@ -10548,16 +10145,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 438,
@@ -10567,7 +10154,6 @@
 									"flags": {
 										"isRest": true
 									},
-									"comment": {},
 									"type": {
 										"type": "array",
 										"elementType": {
@@ -10602,7 +10188,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/emails.ts",
-							"line": 52,
+							"line": 24,
 							"character": 12
 						}
 					],
@@ -10613,16 +10199,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 432,
@@ -10650,7 +10226,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/emails.ts",
-															"line": 53,
+															"line": 25,
 															"character": 19
 														}
 													],
@@ -10670,7 +10246,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/emails.ts",
-															"line": 53,
+															"line": 25,
 															"character": 37
 														}
 													],
@@ -10720,7 +10296,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/emails.ts",
-							"line": 105,
+							"line": 56,
 							"character": 18
 						}
 					],
@@ -10731,16 +10307,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 444,
@@ -10786,7 +10352,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/emails.ts",
-							"line": 88,
+							"line": 46,
 							"character": 14
 						}
 					],
@@ -10797,16 +10363,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 441,
@@ -10816,7 +10372,6 @@
 									"flags": {
 										"isRest": true
 									},
-									"comment": {},
 									"type": {
 										"type": "array",
 										"elementType": {
@@ -10851,7 +10406,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/emails.ts",
-							"line": 32,
+							"line": 11,
 							"character": 28
 						}
 					],
@@ -10862,16 +10417,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 428,
@@ -10879,7 +10424,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -10943,7 +10487,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/emails.ts",
-					"line": 13,
+					"line": 6,
 					"character": 12
 				}
 			],
@@ -10961,9 +10505,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 448,
@@ -10978,9 +10519,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Follows."
-							},
 							"parameters": [
 								{
 									"id": 450,
@@ -10988,7 +10526,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -11019,7 +10556,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/follows.ts",
-															"line": 30,
+															"line": 7,
 															"character": 54
 														}
 													],
@@ -11056,13 +10593,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/follows.ts",
-							"line": 16,
+							"line": 5,
 							"character": 8
 						}
 					],
@@ -11078,13 +10612,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/follows.ts",
-							"line": 22,
+							"line": 6,
 							"character": 10
 						}
 					],
@@ -11102,7 +10633,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/follows.ts",
-							"line": 42,
+							"line": 12,
 							"character": 12
 						}
 					],
@@ -11113,16 +10644,6 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
 							"parameters": [
 								{
 									"id": 458,
@@ -11130,7 +10651,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reflection",
 										"declaration": {
@@ -11151,7 +10671,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/follows.ts",
-															"line": 42,
+															"line": 12,
 															"character": 28
 														}
 													],
@@ -11171,7 +10691,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/follows.ts",
-															"line": 42,
+															"line": 12,
 															"character": 46
 														}
 													],
@@ -11239,7 +10759,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/follows.ts",
-					"line": 10,
+					"line": 4,
 					"character": 13
 				}
 			]
@@ -11250,9 +10770,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3094,
@@ -11267,9 +10784,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of ForkManager."
-							},
 							"parameters": [
 								{
 									"id": 3096,
@@ -11277,7 +10791,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -11310,7 +10823,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/forkmanager.ts",
-															"line": 19,
+															"line": 5,
 															"character": 44
 														}
 													],
@@ -11357,13 +10870,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -11386,13 +10896,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -11427,7 +10934,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/forkmanager.ts",
-					"line": 11,
+					"line": 4,
 					"character": 17
 				}
 			],
@@ -11445,9 +10952,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 463,
@@ -11462,9 +10966,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Gist."
-							},
 							"parameters": [
 								{
 									"id": 465,
@@ -11472,7 +10973,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reflection",
 										"declaration": {
@@ -16275,7 +15775,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/gist.ts",
-															"line": 37,
+															"line": 9,
 															"character": 50
 														}
 													],
@@ -16323,13 +15823,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -16353,19 +15850,10 @@
 						"isPrivate": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/gist.ts",
-							"line": 21,
+							"line": 7,
 							"character": 23
 						}
 					],
@@ -21156,19 +20644,10 @@
 						"isPublic": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/gist.ts",
-							"line": 29,
+							"line": 8,
 							"character": 23
 						}
 					],
@@ -21184,19 +20663,10 @@
 					"kind": 262144,
 					"kindString": "Accessor",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/gist.ts",
-							"line": 58,
+							"line": 18,
 							"character": 13
 						}
 					],
@@ -21207,15 +20677,6 @@
 							"kind": 524288,
 							"kindString": "Get signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
 							"type": {
 								"type": "union",
 								"types": [
@@ -21238,19 +20699,10 @@
 					"kind": 262144,
 					"kindString": "Accessor",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/gist.ts",
-							"line": 49,
+							"line": 15,
 							"character": 9
 						}
 					],
@@ -21261,15 +20713,6 @@
 							"kind": 524288,
 							"kindString": "Get signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
 							"type": {
 								"type": "union",
 								"types": [
@@ -21316,7 +20759,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/gist.ts",
-					"line": 13,
+					"line": 6,
 					"character": 10
 				}
 			],
@@ -21334,9 +20777,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 913,
@@ -21351,9 +20791,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Issue."
-							},
 							"parameters": [
 								{
 									"id": 915,
@@ -21361,7 +20798,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reference",
 										"typeArguments": [
@@ -21387,9 +20823,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -21411,13 +20844,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/issue.ts",
-							"line": 16,
+							"line": 5,
 							"character": 8
 						}
 					],
@@ -21447,7 +20877,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/issue.ts",
-					"line": 10,
+					"line": 4,
 					"character": 11
 				}
 			]
@@ -21458,9 +20888,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3103,
@@ -21475,9 +20902,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of IssueManager."
-							},
 							"parameters": [
 								{
 									"id": 3105,
@@ -21503,7 +20927,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/issuemanager.ts",
-															"line": 19,
+															"line": 6,
 															"character": 39
 														}
 													],
@@ -21522,7 +20946,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/issuemanager.ts",
-															"line": 19,
+															"line": 6,
 															"character": 52
 														}
 													],
@@ -21570,13 +20994,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -21599,13 +21020,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -21640,7 +21058,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/issuemanager.ts",
-					"line": 12,
+					"line": 5,
 					"character": 18
 				}
 			],
@@ -21658,9 +21076,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3031,
@@ -21675,9 +21090,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of BaseManager."
-							},
 							"parameters": [
 								{
 									"id": 3033,
@@ -21703,7 +21115,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/manager.ts",
-															"line": 28,
+															"line": 6,
 															"character": 39
 														}
 													],
@@ -21724,7 +21136,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/manager.ts",
-															"line": 28,
+															"line": 6,
 															"character": 52
 														}
 													],
@@ -21762,13 +21174,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -21786,13 +21195,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -21822,7 +21228,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/manager.ts",
-					"line": 9,
+					"line": 3,
 					"character": 17
 				}
 			],
@@ -21860,9 +21266,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 919,
@@ -21877,9 +21280,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of Repo."
-							},
 							"parameters": [
 								{
 									"id": 921,
@@ -21887,7 +21287,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "reference",
 										"id": 1,
@@ -21900,9 +21299,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {
-										"text": "\n"
-									},
 									"type": {
 										"type": "reflection",
 										"declaration": {
@@ -42157,13 +41553,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/base.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -42187,19 +41580,10 @@
 						"isPrivate": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 37,
+							"line": 9,
 							"character": 23
 						}
 					],
@@ -62441,19 +61825,10 @@
 						"isPublic": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 29,
+							"line": 8,
 							"character": 23
 						}
 					],
@@ -62472,19 +61847,10 @@
 						"isPublic": true,
 						"isReadonly": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 21,
+							"line": 7,
 							"character": 20
 						}
 					],
@@ -62501,19 +61867,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 92,
+							"line": 29,
 							"character": 29
 						}
 					],
@@ -62523,18 +61880,7 @@
 							"name": "allowMergeCommit",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "union",
 								"types": [
@@ -62559,19 +61905,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 103,
+							"line": 33,
 							"character": 29
 						}
 					],
@@ -62581,18 +61918,7 @@
 							"name": "allowRebaseMerge",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "union",
 								"types": [
@@ -62617,19 +61943,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 114,
+							"line": 37,
 							"character": 29
 						}
 					],
@@ -62639,18 +61956,7 @@
 							"name": "allowSquashMerge",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "union",
 								"types": [
@@ -62675,19 +61981,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 125,
+							"line": 41,
 							"character": 34
 						}
 					],
@@ -62697,18 +61994,7 @@
 							"name": "anonymusAccessEnabled",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "union",
 								"types": [
@@ -62733,19 +62019,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 136,
+							"line": 45,
 							"character": 23
 						}
 					],
@@ -62755,18 +62032,7 @@
 							"name": "archiveUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -62782,19 +62048,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 147,
+							"line": 49,
 							"character": 21
 						}
 					],
@@ -62804,18 +62061,7 @@
 							"name": "archived",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "boolean"
@@ -62831,19 +62077,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 158,
+							"line": 53,
 							"character": 25
 						}
 					],
@@ -62853,18 +62090,7 @@
 							"name": "assigneesUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -62880,19 +62106,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 169,
+							"line": 57,
 							"character": 21
 						}
 					],
@@ -62902,18 +62119,7 @@
 							"name": "blobsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -62929,19 +62135,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 180,
+							"line": 61,
 							"character": 24
 						}
 					],
@@ -62951,18 +62148,7 @@
 							"name": "branchesUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -62978,19 +62164,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 191,
+							"line": 65,
 							"character": 21
 						}
 					],
@@ -63000,18 +62177,7 @@
 							"name": "cloneUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63027,19 +62193,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 202,
+							"line": 69,
 							"character": 26
 						}
 					],
@@ -63049,18 +62206,7 @@
 							"name": "codeOfConduct",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "union",
 								"types": [
@@ -63194,19 +62340,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 213,
+							"line": 73,
 							"character": 29
 						}
 					],
@@ -63216,18 +62353,7 @@
 							"name": "collaboratorsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63243,19 +62369,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 224,
+							"line": 77,
 							"character": 24
 						}
 					],
@@ -63265,18 +62382,7 @@
 							"name": "commentsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63292,19 +62398,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 235,
+							"line": 81,
 							"character": 23
 						}
 					],
@@ -63314,18 +62411,7 @@
 							"name": "commitsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63341,19 +62427,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 246,
+							"line": 85,
 							"character": 23
 						}
 					],
@@ -63363,18 +62440,7 @@
 							"name": "compareUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63390,19 +62456,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 257,
+							"line": 89,
 							"character": 24
 						}
 					],
@@ -63412,18 +62469,7 @@
 							"name": "contentsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63439,19 +62485,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 268,
+							"line": 93,
 							"character": 28
 						}
 					],
@@ -63461,18 +62498,7 @@
 							"name": "contributorsUrl",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63488,19 +62514,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 279,
+							"line": 97,
 							"character": 22
 						}
 					],
@@ -63510,18 +62527,7 @@
 							"name": "createdAt",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63537,19 +62543,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 290,
+							"line": 101,
 							"character": 26
 						}
 					],
@@ -63559,18 +62556,7 @@
 							"name": "defaultBranch",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63586,19 +62572,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 70,
+							"line": 21,
 							"character": 17
 						}
 					],
@@ -63608,18 +62585,7 @@
 							"name": "fork",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "boolean"
@@ -63635,19 +62601,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 59,
+							"line": 17,
 							"character": 22
 						}
 					],
@@ -63657,18 +62614,7 @@
 							"name": "forkCount",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "number"
@@ -63684,19 +62630,10 @@
 					"flags": {
 						"isPublic": true
 					},
-					"comment": {
-						"shortText": "Description placeholder",
-						"tags": [
-							{
-								"tag": "readonly",
-								"text": ""
-							}
-						]
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/repo.ts",
-							"line": 81,
+							"line": 25,
 							"character": 21
 						}
 					],
@@ -63706,18 +62643,7 @@
 							"name": "fullName",
 							"kind": 524288,
 							"kindString": "Get signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"tags": [
-									{
-										"tag": "readonly",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
@@ -63776,7 +62702,7 @@
 			"sources": [
 				{
 					"fileName": "src/structures/repo.ts",
-					"line": 13,
+					"line": 6,
 					"character": 10
 				}
 			],
@@ -63794,9 +62720,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3112,
@@ -63811,9 +62734,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of RepoManager."
-							},
 							"parameters": [
 								{
 									"id": 3114,
@@ -63839,7 +62759,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/repomanager.ts",
-															"line": 18,
+															"line": 5,
 															"character": 39
 														}
 													],
@@ -63858,7 +62778,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/repomanager.ts",
-															"line": 18,
+															"line": 5,
 															"character": 52
 														}
 													],
@@ -63906,13 +62826,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -63935,13 +62852,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -63976,7 +62890,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/repomanager.ts",
-					"line": 11,
+					"line": 4,
 					"character": 17
 				}
 			],
@@ -64011,9 +62925,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of User."
-							},
 							"parameters": [
 								{
 									"id": 2799,
@@ -64021,7 +62932,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "union",
 										"types": [
@@ -66219,7 +65129,7 @@
 													"sources": [
 														{
 															"fileName": "src/structures/user.ts",
-															"line": 207,
+															"line": 45,
 															"character": 50
 														}
 													],
@@ -66257,13 +65167,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 37,
+							"line": 17,
 							"character": 11
 						}
 					],
@@ -66280,13 +65187,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 157,
+							"line": 37,
 							"character": 5
 						}
 					],
@@ -66303,13 +65207,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 133,
+							"line": 33,
 							"character": 6
 						}
 					],
@@ -66359,13 +65260,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 127,
+							"line": 32,
 							"character": 9
 						}
 					],
@@ -66382,13 +65280,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 193,
+							"line": 43,
 							"character": 11
 						}
 					],
@@ -66405,13 +65300,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 145,
+							"line": 35,
 							"character": 7
 						}
 					],
@@ -66437,13 +65329,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 103,
+							"line": 28,
 							"character": 11
 						}
 					],
@@ -66460,13 +65349,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 181,
+							"line": 41,
 							"character": 11
 						}
 					],
@@ -66483,13 +65369,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 67,
+							"line": 22,
 							"character": 14
 						}
 					],
@@ -66506,13 +65389,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 187,
+							"line": 42,
 							"character": 11
 						}
 					],
@@ -66529,13 +65409,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 61,
+							"line": 21,
 							"character": 14
 						}
 					],
@@ -66552,13 +65429,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 73,
+							"line": 23,
 							"character": 10
 						}
 					],
@@ -66573,13 +65447,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 43,
+							"line": 18,
 							"character": 12
 						}
 					],
@@ -66596,13 +65467,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 151,
+							"line": 36,
 							"character": 10
 						}
 					],
@@ -66626,13 +65494,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 55,
+							"line": 20,
 							"character": 9
 						}
 					],
@@ -66647,13 +65512,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 25,
+							"line": 15,
 							"character": 4
 						}
 					],
@@ -66670,13 +65532,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 139,
+							"line": 34,
 							"character": 10
 						}
 					],
@@ -66691,13 +65550,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 19,
+							"line": 14,
 							"character": 7
 						}
 					],
@@ -66712,13 +65568,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 31,
+							"line": 16,
 							"character": 8
 						}
 					],
@@ -66735,13 +65588,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 91,
+							"line": 26,
 							"character": 18
 						}
 					],
@@ -66758,13 +65608,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 175,
+							"line": 40,
 							"character": 13
 						}
 					],
@@ -66781,13 +65628,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 169,
+							"line": 39,
 							"character": 13
 						}
 					],
@@ -66804,13 +65648,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 109,
+							"line": 29,
 							"character": 19
 						}
 					],
@@ -66827,13 +65668,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 97,
+							"line": 27,
 							"character": 10
 						}
 					],
@@ -66850,13 +65688,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 121,
+							"line": 31,
 							"character": 11
 						}
 					],
@@ -66873,13 +65708,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 79,
+							"line": 24,
 							"character": 12
 						}
 					],
@@ -66896,13 +65728,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 85,
+							"line": 25,
 							"character": 18
 						}
 					],
@@ -66919,13 +65748,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 163,
+							"line": 38,
 							"character": 17
 						}
 					],
@@ -66951,13 +65777,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 115,
+							"line": 30,
 							"character": 6
 						}
 					],
@@ -66974,13 +65797,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 199,
+							"line": 44,
 							"character": 11
 						}
 					],
@@ -66995,13 +65815,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 49,
+							"line": 19,
 							"character": 5
 						}
 					],
@@ -67021,7 +65838,7 @@
 					"sources": [
 						{
 							"fileName": "src/structures/user.ts",
-							"line": 249,
+							"line": 80,
 							"character": 15
 						}
 					],
@@ -67031,13 +65848,7 @@
 							"name": "_patch",
 							"kind": 4096,
 							"kindString": "Call signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n"
-							},
+							"flags": {},
 							"parameters": [
 								{
 									"id": 2933,
@@ -67045,7 +65856,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "union",
 										"types": [
@@ -69318,9 +68128,6 @@
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
-			"comment": {
-				"shortText": "Description placeholder"
-			},
 			"children": [
 				{
 					"id": 3121,
@@ -69335,9 +68142,6 @@
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
-							"comment": {
-								"shortText": "Creates an instance of UserManager."
-							},
 							"parameters": [
 								{
 									"id": 3123,
@@ -69363,7 +68167,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/usermanager.ts",
-															"line": 22,
+															"line": 9,
 															"character": 39
 														}
 													],
@@ -69384,7 +68188,7 @@
 													"sources": [
 														{
 															"fileName": "src/managers/usermanager.ts",
-															"line": 22,
+															"line": 9,
 															"character": 52
 														}
 													],
@@ -69432,13 +68236,10 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 15,
+							"line": 4,
 							"character": 8
 						}
 					],
@@ -69461,13 +68262,10 @@
 					"flags": {
 						"isOptional": true
 					},
-					"comment": {
-						"shortText": "Description placeholder"
-					},
 					"sources": [
 						{
 							"fileName": "src/managers/manager.ts",
-							"line": 21,
+							"line": 5,
 							"character": 5
 						}
 					],
@@ -69492,7 +68290,7 @@
 					"sources": [
 						{
 							"fileName": "src/managers/usermanager.ts",
-							"line": 35,
+							"line": 13,
 							"character": 20
 						}
 					],
@@ -69502,19 +68300,7 @@
 							"name": "fetch",
 							"kind": 4096,
 							"kindString": "Call signature",
-							"flags": {
-								"isPublic": true
-							},
-							"comment": {
-								"shortText": "Description placeholder",
-								"returns": "\n",
-								"tags": [
-									{
-										"tag": "async",
-										"text": ""
-									}
-								]
-							},
+							"flags": {},
 							"parameters": [
 								{
 									"id": 3129,
@@ -69522,7 +68308,6 @@
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
-									"comment": {},
 									"type": {
 										"type": "intrinsic",
 										"name": "string"
@@ -69583,7 +68368,7 @@
 			"sources": [
 				{
 					"fileName": "src/managers/usermanager.ts",
-					"line": 15,
+					"line": 8,
 					"character": 17
 				}
 			],
