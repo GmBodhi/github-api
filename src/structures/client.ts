@@ -4,18 +4,87 @@ import { Response } from "node-fetch";
 import ClientUser from "./clientuser";
 import { RestManager } from "../utils";
 
+/**
+ * Description placeholder
+ *
+ * @interface ClientOptions
+ * @typedef {ClientOptions}
+ */
 interface ClientOptions {
+  /**
+   * Description placeholder
+   *
+   * @type {?(string | null)}
+   */
   token?: string | null;
+  /**
+   * Description placeholder
+   *
+   * @type {?boolean}
+   */
   cache?: boolean;
 }
 
+/**
+ * Description placeholder
+ *
+ * @class Client
+ * @typedef {Client}
+ * @extends {Events.EventEmitter}
+ */
 class Client extends Events.EventEmitter {
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @readonly
+   * @type {?(string | null)}
+   */
   public readonly token?: string | null;
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @readonly
+   * @type {?(boolean | null)}
+   */
   public readonly cache?: boolean | null;
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @type {boolean}
+   */
   public ready: boolean;
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @type {(ClientUser | null)}
+   */
   public user: ClientUser | null;
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @readonly
+   * @type {UserManager}
+   */
   public readonly users: UserManager;
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @readonly
+   * @type {RestManager}
+   */
   public readonly api: RestManager;
+  /**
+   * Creates an instance of Client.
+   *
+   * @constructor
+   * @param {ClientOptions} [options={}]
+   */
   constructor(options: ClientOptions = {}) {
     super();
     this.token = options.token ?? null;

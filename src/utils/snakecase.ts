@@ -1,3 +1,9 @@
+/**
+ * Description placeholder
+ *
+ * @typedef {CamelToSnakeCase}
+ * @template S extends string
+ */
 type CamelToSnakeCase<S extends string> = S extends `${infer T}${infer U}`
   ? T extends "_"
     ? `${Lowercase<T>}${CamelToSnakeCase<U>}`
@@ -6,14 +12,34 @@ type CamelToSnakeCase<S extends string> = S extends `${infer T}${infer U}`
         : ""}${Lowercase<T>}${CamelToSnakeCase<U>}`
   : S;
 
+/**
+ * Description placeholder
+ *
+ * @typedef {StringValues}
+ * @template T
+ */
 type StringValues<T> = {
   [K in keyof T]: string;
 };
 
+/**
+ * Description placeholder
+ *
+ * @typedef {KeysToSnakeCase}
+ * @template T
+ */
 type KeysToSnakeCase<T> = {
   [K in keyof T as CamelToSnakeCase<string & K>]: T[K];
 };
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @template T extends Partial<Record<string, unknown>>
+ * @param {T} object
+ * @returns {KeysToSnakeCase<StringValues<T>>}
+ */
 export function snakeCasify<T extends Partial<Record<string, unknown>>>(
   object: T
 ): KeysToSnakeCase<StringValues<T>> {

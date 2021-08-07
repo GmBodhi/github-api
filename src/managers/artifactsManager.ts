@@ -3,9 +3,33 @@ import Client from "../structures/client";
 import { ArtifactData, ArtifactListData } from "../utils";
 import Manager from "./manager";
 
+/**
+ * Description placeholder
+ *
+ * @class ArtifactsManager
+ * @typedef {ArtifactsManager}
+ * @extends {Manager}
+ */
 class ArtifactsManager extends Manager {
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   owner: string;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   repo: string;
+  /**
+   * Creates an instance of ArtifactsManager.
+   *
+   * @constructor
+   * @param {{ client: Client }} { client }
+   * @param {{ owner: string; repo: string }} { owner, repo }
+   */
   constructor(
     { client }: { client: Client },
     { owner, repo }: { owner: string; repo: string }
@@ -14,6 +38,16 @@ class ArtifactsManager extends Manager {
     this.owner = owner;
     this.repo = repo;
   }
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {{
+      page?: number;
+      perPage?: number;
+    }} options
+   * @returns {Promise<ArtifactListData>}
+   */
   async list(options: {
     page?: number;
     perPage?: number;
@@ -30,6 +64,13 @@ class ArtifactsManager extends Manager {
         throw e;
       });
   }
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {number} artifactId
+   * @returns {Promise<ArtifactData>}
+   */
   async get(artifactId: number): Promise<ArtifactData> {
     return await this.client.api
       .req(`/repos/${this.owner}/${this.repo}/actions/artifacts/${artifactId}`)
@@ -40,6 +81,13 @@ class ArtifactsManager extends Manager {
   }
 
   // For the time being we will leave as it is... Unless confirm with tests
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {number} artifactId
+   * @returns {Promise<unknown>}
+   */
   async delete(artifactId: number): Promise<unknown> {
     return await this.client.api
       .req(`/repos/${this.owner}/${this.repo}/actions/artifacts/${artifactId}`)
@@ -48,6 +96,13 @@ class ArtifactsManager extends Manager {
         return res.json();
       });
   }
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {number} artifactId
+   * @returns {Promise<unknown>}
+   */
   async download(artifactId: number): Promise<unknown> {
     return await this.client.api
       .req(

@@ -11,37 +11,199 @@ class User {
    * @param {{Client}} extras - extra data
    */
   client: Client;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   login: string;
+  /**
+   * Description placeholder
+   *
+   * @type {number}
+   */
   id: number;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   nodeId: string;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   avatarUrl: string;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   gravatarId: string;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   url: string;
+  /**
+   * Description placeholder
+   *
+   * @type {string}
+   */
   htmlUrl: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   followingUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   followersUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   gistsUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   starredUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   subscriptionsUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   organizationsUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   reposUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   eventsUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   receivedEventsUrl?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   type?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?boolean}
+   */
   siteAdmin?: boolean;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   company?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   blog?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   location?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?(string | null)}
+   */
   email?: string | null;
+  /**
+   * Description placeholder
+   *
+   * @type {?(boolean | null)}
+   */
   hireable?: boolean | null;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   bio?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?(string | null)}
+   */
   twitterUsername?: string | null;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   publicRepos?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   publicGists?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   followers?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   following?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   createdAt?: string;
+  /**
+   * Description placeholder
+   *
+   * @type {?string}
+   */
   updatedAt?: string;
+  /**
+   * Creates an instance of User.
+   *
+   * @constructor
+   * @param {UserData} data
+   * @param {{ client: Client }} { client }
+   */
   constructor(data: UserData, { client }: { client: Client }) {
     this.client = client;
     this.login = data.login;
@@ -77,6 +239,13 @@ class User {
     this.updatedAt = data.updated_at;
   }
 
+  /**
+   * Description placeholder
+   *
+   * @public
+   * @param {(UserData | ClientUserData | Record<string, unknown>)} data
+   * @returns {this}
+   */
   public _patch(
     data: UserData | ClientUserData | Record<string, unknown>
   ): this {

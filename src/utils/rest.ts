@@ -4,8 +4,34 @@ import Client from "../structures/client";
 import { snakeCasify } from ".";
 import GHError from "./error";
 
+/**
+ * Description placeholder
+ *
+ * @type {"https://api.github.com/"}
+ */
 const Base = "https://api.github.com/";
 
+/**
+ * Description placeholder
+ *
+ * @async
+ * @param {({
+  path: string;
+  query?: Partial<Record<string, unknown>>;
+  headers?: Record<string, string>;
+  body?: Record<string, unknown>;
+  method?: "post" | "get" | "delete" | "patch" | "put";
+  _?: boolean;
+})} {
+  path,
+  query = {},
+  headers = {},
+  body,
+  method = "get",
+  _,
+}
+ * @returns {Promise<Response>}
+ */
 async function makeReq({
   path,
   query = {},
@@ -33,12 +59,50 @@ async function makeReq({
   return res;
 }
 
+/**
+ * Description placeholder
+ *
+ * @class RestManager
+ * @typedef {RestManager}
+ */
 class RestManager {
+  /**
+   * Description placeholder
+   *
+   * @private
+   * @readonly
+   * @type {Client}
+   */
   private readonly client: Client;
+  /**
+   * Creates an instance of RestManager.
+   *
+   * @constructor
+   * @param {Client} client
+   */
   constructor(client: Client) {
     this.client = client;
   }
 
+  /**
+   * Description placeholder
+   *
+   * @param {string} path
+   * @param {{
+        query?: Record<string, unknown>;
+        headers?: Record<string, string>;
+        body?: Record<string, unknown>;
+        _?: boolean;
+        auth?: boolean;
+      }} [options={}]
+   * @returns {{
+      post: () => Promise<Response>;
+      get: () => Promise<Response>;
+      put: () => Promise<Response>;
+      delete: () => Promise<Response>;
+      patch: () => Promise<Response>;
+    }}
+   */
   req(
     path: string,
     options: {

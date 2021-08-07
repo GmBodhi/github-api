@@ -5,20 +5,79 @@ import Client from "./client";
 import { Response } from "node-fetch";
 import { ClientUserData } from "../utils/rawdata";
 
+/**
+ * Description placeholder
+ *
+ * @class ClientUser
+ * @typedef {ClientUser}
+ * @extends {User}
+ */
 class ClientUser extends User {
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   privateGists?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   totalPrivateRepos?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   ownedPrivateRepos?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   diskUsage?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {?number}
+   */
   collaborators?: number;
+  /**
+   * Description placeholder
+   *
+   * @type {Blocks}
+   */
   blocks: Blocks;
+  /**
+   * Description placeholder
+   *
+   * @type {Emails}
+   */
   emails: Emails;
+  /**
+   * Description placeholder
+   *
+   * @type {{
+      name?: string;
+      space?: number;
+      privateRepos?: number;
+      collaborators?: number;
+    }}
+   */
   plan: {
     name?: string;
     space?: number;
     privateRepos?: number;
     collaborators?: number;
   };
+  /**
+   * Creates an instance of ClientUser.
+   *
+   * @constructor
+   * @param {ClientUserData} data
+   * @param {{ client: Client }} { client }
+   */
   constructor(data: ClientUserData, { client }: { client: Client }) {
     super(data, { client });
     this.privateGists = data.private_gists;
@@ -63,26 +122,77 @@ class ClientUser extends User {
     return await this.setAll({ blog });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} twitterUsername
+   * @returns {Promise<User>}
+   */
   async setTwitterUsername(twitterUsername: string): Promise<User> {
     return await this.setAll({ twitterUsername });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} company
+   * @returns {Promise<User>}
+   */
   async setCompany(company: string): Promise<User> {
     return await this.setAll({ company });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} location
+   * @returns {Promise<User>}
+   */
   async setLocation(location: string): Promise<User> {
     return await this.setAll({ location });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {boolean} hireable
+   * @returns {Promise<User>}
+   */
   async setHireable(hireable: boolean): Promise<User> {
     return await this.setAll({ hireable });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} bio
+   * @returns {Promise<User>}
+   */
   async setBio(bio: string): Promise<User> {
     return await this.setAll({ bio });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {{
+      email?: string;
+      name?: string;
+      blog?: string;
+      twitterUsername?: string;
+      company?: string;
+      location?: string;
+      hireable?: boolean;
+      bio?: string;
+    }} options
+   * @returns {Promise<User>}
+   */
   async setAll(options: {
     email?: string;
     name?: string;
