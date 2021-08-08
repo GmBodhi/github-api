@@ -1,19 +1,19 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "../css/leftside.css";
+import React, {useEffect} from 'react';
+import {useState} from 'react';
+import {NavLink} from 'react-router-dom';
+import '../css/leftside.css';
 
-const fetchDocs = (setJson, { version, branch }) => {
+const fetchDocs = (setJson, {version, branch}) => {
   fetch(
-    `https://cdn.statically.io/gh/gmbodhi/github-api/${branch}/docs/${version}.json`
+      `https://cdn.statically.io/gh/gmbodhi/github-api/${branch}/docs/${version}.json`,
   )
-    .then((res) => res.json())
-    .then((r) => setJson(r));
+      .then((res) => res.json())
+      .then((r) => setJson(r));
 };
 
-export default function LeftSide({ version, branch }) {
+export default function LeftSide({version, branch}) {
   const [json, setJson] = useState({
-    children: [{ name: undefined, id: undefined }],
+    children: [{name: undefined, id: undefined}],
   });
   useEffect(() => {
     fetchDocs(setJson, {
