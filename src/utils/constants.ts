@@ -1,4 +1,16 @@
+/**
+ * Description placeholder
+ *
+ * @export
+ * @interface FetchOptions
+ * @typedef {FetchOptions}
+ */
 export interface FetchOptions {
+  /**
+   * Description placeholder
+   *
+   * @type {?boolean}
+   */
   auth?: boolean;
 }
 

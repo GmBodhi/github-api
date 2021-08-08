@@ -5,11 +5,30 @@ import Base from "./base";
 import Client from "./client";
 import User from "./user";
 
+/**
+ * Description placeholder
+ *
+ * @class Blocks
+ * @typedef {Blocks}
+ * @extends {Base}
+ */
 class Blocks extends Base {
+  /**
+   * Creates an instance of Blocks.
+   *
+   * @constructor
+   * @param {Client} client
+   */
   constructor(client: Client) {
     super(client);
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @returns {Promise<User[]>}
+   */
   async list(): Promise<User[]> {
     return await this.client.api
       .req("user/blocks")
@@ -26,6 +45,13 @@ class Blocks extends Base {
       });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} username
+   * @returns {Promise<boolean>}
+   */
   async has(username: string): Promise<boolean> {
     return this.client.api
       .req(`user/blocks/${username}`, { _: true })
@@ -40,6 +66,13 @@ class Blocks extends Base {
       });
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} username
+   * @returns {Promise<boolean>}
+   */
   async unBlock(username: string): Promise<boolean> {
     const res: Response = await this.client.api
       .req(`user/blocks/${username}`, { _: true })
@@ -51,6 +84,13 @@ class Blocks extends Base {
     return res.ok ? true : false;
   }
 
+  /**
+   * Description placeholder
+   *
+   * @async
+   * @param {string} username
+   * @returns {Promise<boolean>}
+   */
   async block(username: string): Promise<boolean> {
     const res: Response = await this.client.api
       .req(`user/blocks/${username}`, { _: true })
