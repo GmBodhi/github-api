@@ -1,2 +1,0 @@
-node docgen
-yarn gendoc
