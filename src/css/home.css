@@ -14,6 +14,30 @@
   transform: translate(-50%, -50%);
 }
 
+.seedocs {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.seedocs::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.seedocs:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .container a {
   position: absolute;
   top: 55%;
@@ -34,6 +58,6 @@
   transform: translate(-50%, -50%);
 }
 
-.container a:hover {
+/* .container a:hover {
   text-decoration: underline;
-}
+} */

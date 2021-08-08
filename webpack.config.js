@@ -26,6 +26,11 @@ module.exports = {
   devServer: {
     publicPath: "/",
     historyApiFallback: true,
+    overlay: {
+      warnings: true,
+      errors: true,
+    },
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
