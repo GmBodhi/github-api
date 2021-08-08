@@ -1,7 +1,7 @@
-import React from "react";
-import Nav from "./Nav";
-import "../css/home.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Nav from './Nav';
+import '../css/home.css';
+import {Link} from 'react-router-dom';
 export default function Home(props) {
   return (
     <>
