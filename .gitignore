@@ -1,5 +1,6 @@
 node_modules
 dist
+extras
 .env
 inspect.js
 .yarn
