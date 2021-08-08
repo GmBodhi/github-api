@@ -4,7 +4,8 @@ import { ArtifactData, ArtifactListData } from "../utils";
 import Manager from "./manager";
 
 /**
- * Description placeholder
+ * Manager that holds all artifacts for a specific repo.
+ * @see {@link Manager} Base class for managers.
  *
  * @class ArtifactsManager
  * @typedef {ArtifactsManager}
@@ -12,13 +13,13 @@ import Manager from "./manager";
  */
 class ArtifactsManager extends Manager {
   /**
-   * Description placeholder
+   * Owner of the repo
    *
    * @type {string}
    */
   owner: string;
   /**
-   * Description placeholder
+   * name of the repo
    *
    * @type {string}
    */
@@ -39,13 +40,10 @@ class ArtifactsManager extends Manager {
     this.repo = repo;
   }
   /**
-   * Description placeholder
+   * Lists artifacts for a repo.
    *
    * @async
-   * @param {{
-      page?: number;
-      perPage?: number;
-    }} options
+   * @param {{page?: number; perPage?: number;}} options
    * @returns {Promise<ArtifactListData>}
    */
   async list(options: {
@@ -97,7 +95,7 @@ class ArtifactsManager extends Manager {
       });
   }
   /**
-   * Description placeholder
+   * Get a specific artifact for a repo.
    *
    * @async
    * @param {number} artifactId
