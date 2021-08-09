@@ -26,7 +26,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: 2px;
   left: 0;
   background-color: white;
   transform-origin: bottom right;
@@ -58,6 +58,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* .container a:hover {
-  text-decoration: underline;
-} */
+.canvas {
+  width: 100%;
+  height: 100%;
+}
