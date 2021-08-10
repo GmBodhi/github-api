@@ -5,6 +5,7 @@ import { Client } from "../structures";
  *
  * @class BaseManager
  * @typedef {BaseManager}
+ * @noInheritDoc
  */
 class BaseManager {
   /**

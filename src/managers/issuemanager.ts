@@ -8,6 +8,7 @@ import Manager from "./manager";
  * @class IssueManager
  * @typedef {IssueManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class IssueManager extends Manager {
   /**

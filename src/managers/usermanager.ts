@@ -11,6 +11,7 @@ import { UserListData } from "../utils";
  * @class UserManager
  * @typedef {UserManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class UserManager extends Manager {
   /**

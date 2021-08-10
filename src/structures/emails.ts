@@ -9,6 +9,7 @@ import Client from "./client";
  * @class Emails
  * @typedef {Emails}
  * @extends {Base}
+ * @noInheritDoc
  */
 class Emails extends Base {
   /**

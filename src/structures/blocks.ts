@@ -11,6 +11,7 @@ import User from "./user";
  * @class Blocks
  * @typedef {Blocks}
  * @extends {Base}
+ * @noInheritDoc
  */
 class Blocks extends Base {
   /**

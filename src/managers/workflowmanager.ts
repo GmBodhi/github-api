@@ -6,6 +6,7 @@ import { Manager } from ".";
  * @class WorkflowManager
  * @typedef {WorkflowManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class WorkflowManager extends Manager {}
 

@@ -9,6 +9,7 @@ import Client from "./client";
  * @class Gist
  * @typedef {Gist}
  * @extends {Base}
+ * @noInheritDoc
  */
 class Gist extends Base {
   /**

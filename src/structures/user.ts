@@ -9,6 +9,7 @@ class User {
    *
    * @param {Object} data - raw data from api
    * @param {{Client}} extras - extra data
+   * @noInheritDoc
    */
   client: Client;
   /**

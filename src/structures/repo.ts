@@ -9,6 +9,7 @@ import Client from "./client";
  * @class Repo
  * @typedef {Repo}
  * @extends {Base}
+ * @noInheritDoc
  */
 class Repo extends Base {
   /**

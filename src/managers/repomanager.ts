@@ -7,6 +7,7 @@ import Manager from "./manager";
  * @class RepoManager
  * @typedef {RepoManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class RepoManager extends Manager {
   /**

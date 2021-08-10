@@ -8,6 +8,7 @@ import Client from "./client";
  * @class Actions
  * @typedef {Actions}
  * @extends {Base}
+ * @noInheritDoc
  */
 class Actions extends Base {
   /**

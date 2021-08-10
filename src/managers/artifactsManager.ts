@@ -10,6 +10,7 @@ import Manager from "./manager";
  * @class ArtifactsManager
  * @typedef {ArtifactsManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class ArtifactsManager extends Manager {
   /**

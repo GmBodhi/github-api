@@ -5,9 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/index.test.ts",
-    "docs": "run-s docs:mod docs:gen",
-    "docs:mod": "node docgen",
-    "docs:gen": "typedoc",
+    "docs": "node docgen",
     "lint": "eslint . --ext .ts --max-warnings=0",
     "build": "tsc -p tsconfig.json"
   },
@@ -33,9 +31,11 @@
     "jsdoc-json": "^2.0.2",
     "mocha": "^9.0.2",
     "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
     "ts-node": "^10.0.0",
     "tslib": "^2.3.0",
     "typedoc": "^0.21.2",
+    "typedoc-plugin-no-inherit": "^1.3.0",
     "typescript": "^4.3.2"
   }
 }

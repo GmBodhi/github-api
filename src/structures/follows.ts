@@ -6,6 +6,7 @@ import Client from "./client";
  *
  * @class Follows
  * @typedef {Follows}
+ * @noInheritDoc
  */
 class Follows {
   /**

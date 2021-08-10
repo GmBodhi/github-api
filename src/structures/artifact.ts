@@ -3,6 +3,7 @@
  *
  * @class Artifact
  * @typedef {Artifact}
+ * @noInheritDoc
  */
 class Artifact {}
 

@@ -6,6 +6,7 @@ import { Manager } from ".";
  * @class OrgManager
  * @typedef {OrgManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class OrgManager extends Manager {}
 

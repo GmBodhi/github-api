@@ -6,6 +6,7 @@ import { Manager } from ".";
  * @class PullManager
  * @typedef {PullManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class PullManager extends Manager {}
 

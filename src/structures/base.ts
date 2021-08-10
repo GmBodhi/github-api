@@ -5,6 +5,7 @@ import Client from "./client";
  *
  * @class Base
  * @typedef {Base}
+ * @noInheritDoc
  */
 class Base {
   /**

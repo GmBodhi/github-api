@@ -6,6 +6,7 @@ import Client from "./client";
  *
  * @class Issue
  * @typedef {Issue}
+ * @noInheritDoc
  */
 class Issue {
   /**

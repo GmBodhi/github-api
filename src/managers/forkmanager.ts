@@ -7,6 +7,7 @@ import { Client } from "../structures";
  * @class ForkManager
  * @typedef {ForkManager}
  * @extends {Manager}
+ * @noInheritDoc
  */
 class ForkManager extends Manager {
   /**

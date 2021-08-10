@@ -11,6 +11,7 @@ import { ClientUserData } from "../utils/rawdata";
  * @class ClientUser
  * @typedef {ClientUser}
  * @extends {User}
+ * @noInheritDoc
  */
 class ClientUser extends User {
   /**

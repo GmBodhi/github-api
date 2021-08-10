@@ -9,6 +9,7 @@ import { RestManager } from "../utils";
  *
  * @interface ClientOptions
  * @typedef {ClientOptions}
+ * @noInheritDoc
  */
 interface ClientOptions {
   /**
