@@ -11,8 +11,6 @@ import './css/global.css';
 
 function App() {
   const target = window.location.search.split('=');
-  console.log(target);
-  console.log(target[1] && target[0] === '?fw' ? target[1] : 'index');
   return (
     <Router>
       <div>
