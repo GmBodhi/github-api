@@ -1,27 +1,8 @@
-import React, {useEffect} from 'react';
-import {useState} from 'react';
-import {NavLink} from 'react-router-dom';
-import '../css/leftside.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../css/leftside.css";
 
-const fetchDocs = (setJson, {version, branch}) => {
-  fetch(
-      `https://cdn.statically.io/gh/gmbodhi/github-api/${branch}/docs/${version}.json`,
-  )
-      .then((res) => res.json())
-      .then((r) => setJson(r));
-};
-
-export default function LeftSide({version, branch}) {
-  const [json, setJson] = useState({
-    children: [{name: undefined, id: undefined}],
-  });
-  useEffect(() => {
-    fetchDocs(setJson, {
-      version,
-      branch,
-    });
-  }, [version, branch]);
-
+export default function LeftSide({ json }) {
   return (
     <div className="left-side">
       <ul>
@@ -30,7 +11,7 @@ export default function LeftSide({version, branch}) {
             <li key={title.id} className="left-list">
               <NavLink
                 className="left-link"
-                to={`/docs/${title.name}`}
+                to={`${title.name}`}
                 activeClassName="active"
               >
                 {title.name}

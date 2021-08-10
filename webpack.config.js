@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index_bundle.js",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -19,6 +20,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        type: "asset/resource",
       },
     ],
   },

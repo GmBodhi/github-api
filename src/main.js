@@ -1,5 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import Img from "./assets/favicon.png";
 
-ReactDOM.render(<App />, document.getElementById('app'));
+document.head.querySelector("#favicon").href = Img;
+
+ReactDOM.render(<App />, document.getElementById("app"));

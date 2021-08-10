@@ -1,23 +1,42 @@
-import LeftSide from './leftside';
-import React from 'react';
-import Nav from './Nav';
-import {useParams} from 'react-router-dom';
+import LeftSide from "./leftside";
+import React, { useEffect, useState } from "react";
+import Nav from "./Nav";
+import { Redirect, useParams } from "react-router-dom";
+import Doc from "./Doc";
+
+const fetchDocs = (setJson, { version, branch }) => {
+  fetch(
+    `https://cdn.statically.io/gh/gmbodhi/github-api/${branch}/docs/${version}.json`
+  )
+    .then((res) => res.json())
+    .then((r) => setJson(r));
+};
+
 export default function Docs() {
-  const {docs} = useParams();
+  const { docs, branch, version } = useParams();
+  if (!branch || !version) return <Redirect to="/docs/dev/1.0.0/" />;
+  const [json, setJson] = useState({
+    children: [{ name: undefined, id: "undefined" }],
+  });
+  useEffect(() => {
+    fetchDocs(setJson, {
+      version,
+      branch,
+    });
+  }, [version, branch]);
   if (docs) {
-    console.log(docs);
     return (
       <>
         <Nav />
-        <LeftSide version="1.0.0" branch="dev" />
-        {docs}
+        <LeftSide json={json} />
+        <Doc docs={docs} json={json} />
       </>
     );
   }
   return (
     <>
       <Nav />
-      <LeftSide version="1.0.0" branch="dev" />
+      <LeftSide json={json} />
     </>
   );
 }

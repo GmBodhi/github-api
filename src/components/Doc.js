@@ -1,5 +1,5 @@
-import React from 'react';
+import React from "react";
 
-export function Doc(prop = {}) {
+export default function Doc({ docs, json }) {
   return <></>;
 }
