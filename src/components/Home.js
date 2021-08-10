@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
       <Nav />
+
       <div className="container">
         <h1>GitHub.API</h1>
         <p>Note: This package is under development..!</p>
