@@ -1,8 +1,8 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "../css/leftside.css";
+import React from 'react';
+import {NavLink} from 'react-router-dom';
+import '../css/leftside.css';
 
-export default function LeftSide({ json }) {
+export default function LeftSide({json}) {
   return (
     <div className="left-side">
       <ul>
