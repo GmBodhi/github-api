@@ -1,6 +1,6 @@
-import '../css/footer.css';
-import React from 'react';
+import "../css/footer.css";
+import React from "react";
 
 export function Footer() {
-  return <></>;
+  return <>Hmm</>;
 }
