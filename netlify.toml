@@ -1,5 +1,1 @@
-[[redirects]]
-  from = "/docs/*"
-  to = "/?fw=docs/:splat"
-  status = 301
-  force = false
+/*    /index.html   200
