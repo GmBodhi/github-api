@@ -1,6 +1,6 @@
 # Github-api Information
 
-**This package is still in development. Updated: Monday, 20 September 2021**
+**This package is still in development. Updated: Thursday, 14 October 2021**
 
 An Object-Oriented wrapper for interacting with GitHub's api.<br />
 Fast as hell <br />
