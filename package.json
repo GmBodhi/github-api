@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/collection": "^0.1.6",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {
     "@octokit/types": "^6.18.0",
