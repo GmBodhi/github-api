@@ -1,3 +1,7 @@
 node_modules
-test.js
 dist
+extras
+.env
+inspect.js
+.yarn
+.yarnrc.yml

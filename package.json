@@ -4,22 +4,35 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "typedoc src/index.ts --json docs/doc.json"
+    "test": "mocha -r ts-node/register tests/index.test.ts",
+    "docs": "run-s docs:mod docs:gen",
+    "docs:mod": "node docgen",
+    "docs:gen": "typedoc",
+    "lint": "eslint . --ext .ts --max-warnings=0",
+    "build": "tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@discordjs/collection": "^0.1.6",
-    "@types/node-fetch": "^2.5.10",
-    "chai": "^4.3.4",
-    "mocha": "^9.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {
-    "@types/node": "^15.12.2",
+    "@octokit/types": "^6.18.0",
+    "@types/chai": "^4.2.21",
+    "@types/eslint": "^7.28.0",
+    "@types/mocha": "^8.2.3",
+    "@types/node": "^15.14.0",
+    "@types/node-fetch": "^2.5.10",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.30.0",
     "jsdoc-json": "^2.0.2",
+    "mocha": "^9.0.2",
+    "npm-run-all": "^4.1.5",
     "ts-node": "^10.0.0",
     "tslib": "^2.3.0",
     "typedoc": "^0.21.2",
